@@ -1,0 +1,80 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: DevS_Orbit_PoC
+label: DevS_Orbit_PoC
+description: |
+  Start a BLE device in central mode.
+category: Example|BLE
+filter:
+- name: Project Difficulty
+  value: [Beginner]
+- name: Wireless Technology
+  value: [BLE]
+package: ble
+quality: production
+readme:
+- {path: readme.md}
+- {path: readme.md}
+source:
+- {path: main.c}
+include:
+- path: .
+  file_list:
+  - {path: ble_config.h}
+sdk: {id: simplicity_sdk, version: 2025.6.0}
+toolchain_settings:
+- {value: -Wall -Werror, option: gcc_compiler_option}
+component:
+- {from: wiseconnect3_sdk, id: SIWG917M111MGTBA}
+- {from: wiseconnect3_sdk, id: basic_network_config_manager}
+- {from: wiseconnect3_sdk, id: ble}
+- {from: wiseconnect3_sdk, id: brd4342a}
+- {from: wiseconnect3_sdk, id: console}
+- {from: wiseconnect3_sdk, id: console_variables}
+- {from: wiseconnect3_sdk, id: network_manager}
+- {from: wiseconnect3_sdk, id: psram_aps6404l_sqh}
+- {from: wiseconnect3_sdk, id: psram_core}
+- {from: wiseconnect3_sdk, id: si91x_memory_default_config}
+- {from: wiseconnect3_sdk, id: sl_hrng}
+- {from: wiseconnect3_sdk, id: sl_power_manager}
+- {from: wiseconnect3_sdk, id: sl_si91x_aes}
+- {from: wiseconnect3_sdk, id: sl_si91x_basic_buffers}
+- {from: wiseconnect3_sdk, id: sl_si91x_crypto}
+- {from: wiseconnect3_sdk, id: sl_si91x_crypto_utility}
+- {from: wiseconnect3_sdk, id: sl_si91x_lwip_stack}
+- {from: wiseconnect3_sdk, id: sl_si91x_nvm3}
+- {from: wiseconnect3_sdk, id: sl_si91x_soc_soft_reset}
+- {from: wiseconnect3_sdk, id: sl_si91x_trng}
+- {from: wiseconnect3_sdk, id: sl_usart}
+- {from: wiseconnect3_sdk, id: syscalls}
+- {from: wiseconnect3_sdk, id: wifi}
+- {from: wiseconnect3_sdk, id: wifi_resources}
+- {from: wiseconnect3_sdk, id: wireless_wakeup_ulp_component}
+- {from: wiseconnect3_sdk, id: wiseconnect3_common}
+- {id: brd4002a}
+- {id: ecode}
+- {id: freertos}
+- {id: freertos_heap_4}
+- {id: lwip_app_mdns}
+- {id: mbedtls_aes}
+- {id: mbedtls_core}
+- {id: sl_main}
+other_file:
+- {path: resources/readme/blecentral_soc_ncp.png}
+- {path: resources/readme/advertiser.png}
+- {path: resources/readme/output_1.png}
+- {path: resources/readme/connection.png}
+define:
+- {name: SL_SI91X_PRINT_DBG_LOG}
+requires:
+- condition: [si91x_common_flash]
+  name: device_needs_ram_execution
+configuration:
+- {name: SL_BOARD_ENABLE_VCOM, value: '1'}
+ui_hints:
+  highlight:
+  - {path: readme.md, focus: true}
+sdk_extension:
+- {id: wiseconnect3_sdk, version: 3.5.0}
+post_build:
+- {path: DevS_Orbit_PoC.slpb}
+

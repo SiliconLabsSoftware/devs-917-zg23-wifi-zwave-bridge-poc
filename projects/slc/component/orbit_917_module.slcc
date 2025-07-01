@@ -1,0 +1,27 @@
+id: orbit_917_module
+label: Orbit 917 modules
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides common modules APIs for Orbit 917 project.
+provides:
+  - name: orbit_917_module
+
+include:
+  - path: modules
+    file_list:
+      - path: sl_http.h
+      - path: sl_psram.h
+      - path: sl_rd_data_store.h
+      - path: sl_si917_net.h
+      - path: sl_hw_rng.h
+      - path: sl_mbedtls_thread_impl.h
+      - path: sl_si917_aes.h
+
+source:
+  - path: modules/sl_hw_rng.c
+  - path: modules/sl_psram.c
+  - path: modules/sl_mbedtls_thread_impl.c
+  - path: modules/sl_rd_data_store.c
+  - path: modules/sl_si917_net.c
+  - path: modules/sl_si917_aes.c

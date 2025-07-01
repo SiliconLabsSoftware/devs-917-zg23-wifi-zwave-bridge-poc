@@ -1,0 +1,90 @@
+id: orbit_917_mbedtls
+label: Orbit 917 mbedtls
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides mbedtls source code for Orbit 917 project.
+provides:
+  - name: orbit_917_mbedtls
+
+include:
+  - path: mbedtls
+    file_list:
+      - path: sli_mbedtls_config_all.h
+
+source:
+  - path: mbedtls_port/sl_mbedtls_time_alt.c
+  - path: mbedtls_port/sl_mbedtls_timing.c
+  - path: mbedtls_port/sl_net_sockets.c
+  - path: mbedtls/rsa_alt_helpers.c
+  - path: mbedtls/ssl_client.c
+  - path: mbedtls/pkcs5.c
+  - path: mbedtls/debug.c
+  - path: mbedtls/x509_crl.c
+  - path: mbedtls/entropy_poll.c
+  - path: mbedtls/x509write_crt.c
+  - path: mbedtls/memory_buffer_alloc.c
+  - path: mbedtls/aesce.c
+  - path: mbedtls/dhm.c
+  - path: mbedtls/x509write_csr.c
+  - path: mbedtls/aesni.c
+  - path: mbedtls/oid.c
+  - path: mbedtls/x509_csr.c
+  - path: mbedtls/cipher_wrap.c
+  - path: mbedtls/pkcs7.c
+  - path: mbedtls/ssl_msg.c
+  - path: mbedtls/asn1parse.c
+  - path: mbedtls/pkparse.c
+  - path: mbedtls/entropy.c
+  - path: mbedtls/pk_wrap.c
+  - path: mbedtls/timing.c
+  - path: mbedtls/padlock.c
+  - path: mbedtls/sha1.c
+  - path: mbedtls/ssl_ticket.c
+  - path: mbedtls/ecp.c
+  - path: mbedtls/x509_crt.c
+  - path: mbedtls/md5.c
+  - path: mbedtls/version_features.c
+  - path: mbedtls/pkwrite.c
+  - path: mbedtls/x509write.c
+  - path: mbedtls/pem.c
+  - path: mbedtls/ecdh.c
+  - path: mbedtls/pk.c
+  - path: mbedtls/ecjpake.c
+  - path: mbedtls/bignum_mod.c
+  - path: mbedtls/ssl_cache.c
+  - path: mbedtls/pk_ecc.c
+  - path: mbedtls/ecp_curves.c
+  - path: mbedtls/cmac.c
+  - path: mbedtls/bignum_mod_raw.c
+  - path: mbedtls/sha256.c
+  - path: mbedtls/x509_create.c
+  - path: mbedtls/bignum_core.c
+  - path: mbedtls/pkcs12.c
+  - path: mbedtls/ssl_ciphersuites.c
+  - path: mbedtls/error.c
+  - path: mbedtls/ssl_cookie.c
+  - path: mbedtls/ssl_tls12_client.c
+  - path: mbedtls/cipher.c
+  - path: mbedtls/chacha20.c
+  - path: mbedtls/gcm.c
+  - path: mbedtls/asn1write.c
+  - path: mbedtls/sha512.c
+  - path: mbedtls/ecdsa.c
+  - path: mbedtls/rsa.c
+  - path: mbedtls/poly1305.c
+  - path: mbedtls/hkdf.c
+  - path: mbedtls/bignum.c
+  - path: mbedtls/camellia.c
+  - path: mbedtls/x509.c
+  - path: mbedtls/ssl_tls12_server.c
+  - path: mbedtls/hmac_drbg.c
+  - path: mbedtls/des.c
+  - path: mbedtls/md.c
+  - path: mbedtls/chachapoly.c
+  - path: mbedtls/ccm.c
+  - path: mbedtls/version.c
+  - path: mbedtls/nist_kw.c
+  - path: mbedtls/base64.c
+  - path: mbedtls/ctr_drbg.c
+  - path: mbedtls/ssl_tls.c

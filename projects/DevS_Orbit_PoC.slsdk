@@ -1,0 +1,9 @@
+# Properties file for Simplicity Studio metadata
+id=com.silabs.sdk.orbit_917
+
+version=0.0.1
+
+label=Silicon Labs orbit_917
+description=orbit_917 extension for Simplicity SDK Suite
+
+prop.subLabel=Silicon Labs orbit_917\\ 0.0.1-1.0

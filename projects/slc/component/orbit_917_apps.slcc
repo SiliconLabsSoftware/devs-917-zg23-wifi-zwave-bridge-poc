@@ -1,0 +1,58 @@
+id: orbit_917_apps
+label: Orbit 917 Apps
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides applications for Orbit 917 project.
+provides:
+  - name: orbit_917_apps
+requires:
+  - name: orbit_917_app_ble_prov
+  - name: orbit_917_app_common
+  - name: orbit_917_app_net
+  - name: orbit_917_app_serial
+  - name: orbit_917_app_zwave
+  - name: orbit_917_lib
+  - name: orbit_917_module
+  - name: orbit_917_utils
+  - name: orbit_917_mbedtls
+
+include:
+  - path: apps
+    file_list:
+      - path: sl_app.h
+      - path: sl_cli.h
+  - path: apps/threads
+    file_list:
+      - path: sl_ts_thread.h
+      - path: sl_serial_api_handler.h
+      - path: sl_security_layer.h
+      - path: sl_zw_router.h
+      - path: sl_tcpip_handler.h
+      - path: sl_cc_handler.h
+      - path: sl_infra_if.h
+      - path: sl_zw_netif.h
+      - path: sl_tls_client.h
+  - path: apps/sl_ota
+    file_list:
+      - path: sl_ota.h
+      - path: sl_bridge_ota.h
+      - path: sl_controller_ota.h
+      - path: sl_node_ota.h
+
+source:
+  - path: apps/sl_app.c
+  - path: apps/sl_cli.c
+  - path: apps/threads/sl_serial_api_handler.c
+  - path: apps/threads/sl_tcpip_handler.c
+  - path: apps/threads/sl_cc_handler.c
+  - path: apps/threads/sl_ts_thread.c
+  - path: apps/threads/sl_security_layer.c
+  - path: apps/threads/sl_zw_router.c
+  - path: apps/threads/sl_infra_if.c
+  - path: apps/threads/sl_zw_netif.c
+  - path: apps/threads/sl_tls_client.c
+  - path: apps/sl_ota/sl_bridge_ota.c
+  - path: apps/sl_ota/sl_controller_ota.c
+  - path: apps/sl_ota/sl_ota.c
+  - path: apps/sl_ota/sl_node_ota.c

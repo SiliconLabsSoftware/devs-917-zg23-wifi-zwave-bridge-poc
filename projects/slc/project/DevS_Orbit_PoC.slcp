@@ -1,0 +1,101 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: DevS_Orbit_PoC
+label: DevS_Orbit_PoC
+description: |
+  Start a BLE device in central mode.
+category: Example|BLE
+filter:
+- name: Project Difficulty
+  value: [Beginner]
+- name: Wireless Technology
+  value: [BLE]
+package: ble
+quality: production
+readme:
+- {path: readme.md}
+- {path: readme.md}
+source:
+- {path: ../../main.c}
+include:
+- path: .
+  file_list:
+  - {path: ../../ble_config.h}
+sdk: {id: simplicity_sdk, version: 2025.6.0}
+toolchain_settings:
+  - option: gcc_compiler_option
+    value: "-Werror=unused-function"
+  - option: gcc_compiler_option
+    value: "-Werror=unused-label"
+  - option: gcc_compiler_option
+    value: -Wall
+component:
+- {from: wiseconnect3_sdk, id: SIWG917M111MGTBA}
+- {from: wiseconnect3_sdk, id: basic_network_config_manager}
+- {from: wiseconnect3_sdk, id: ble}
+- {from: wiseconnect3_sdk, id: brd4342a}
+- {from: wiseconnect3_sdk, id: console}
+- {from: wiseconnect3_sdk, id: console_variables}
+- {from: wiseconnect3_sdk, id: network_manager}
+- {from: wiseconnect3_sdk, id: psram_aps6404l_sqh}
+- {from: wiseconnect3_sdk, id: psram_core}
+- {from: wiseconnect3_sdk, id: si91x_memory_default_config}
+- {from: wiseconnect3_sdk, id: sl_hrng}
+- {from: wiseconnect3_sdk, id: sl_power_manager}
+- {from: wiseconnect3_sdk, id: sl_si91x_aes}
+- {from: wiseconnect3_sdk, id: sl_si91x_basic_buffers}
+- {from: wiseconnect3_sdk, id: sl_si91x_crypto}
+- {from: wiseconnect3_sdk, id: sl_si91x_crypto_utility}
+- {from: wiseconnect3_sdk, id: sl_si91x_lwip_stack}
+- {from: wiseconnect3_sdk, id: sl_si91x_nvm3}
+- {from: wiseconnect3_sdk, id: sl_si91x_soc_soft_reset}
+- {from: wiseconnect3_sdk, id: sl_si91x_trng}
+- {from: wiseconnect3_sdk, id: sl_usart}
+- {from: wiseconnect3_sdk, id: syscalls}
+- {from: wiseconnect3_sdk, id: wifi}
+- {from: wiseconnect3_sdk, id: wifi_resources}
+- {from: wiseconnect3_sdk, id: wireless_wakeup_ulp_component}
+- {from: wiseconnect3_sdk, id: wiseconnect3_common}
+- {from: orbit_917, id: orbit_917_apps}
+- {id: brd4002a}
+- {id: ecode}
+- {id: freertos}
+- {id: freertos_heap_4}
+- {id: lwip_app_mdns}
+- {id: mbedtls_aes}
+- {id: mbedtls_core}
+- {id: sl_main}
+other_file:
+- {path: resources/readme/blecentral_soc_ncp.png}
+- {path: resources/readme/advertiser.png}
+- {path: resources/readme/output_1.png}
+- {path: resources/readme/connection.png}
+define:
+- {name: SL_SI91X_PRINT_DBG_LOG}
+- {name: SLI_MBEDTLS_CONFIG_AUTOGEN_OVERRIDE_FILE, value: "\"sli_mbedtls_config_all.h\""}
+- {name: SLI_SI91X_MCU_INTR_BASED_RX_ON_UART, value: '1'}
+requires:
+- condition: [si91x_common_flash]
+  name: device_needs_ram_execution
+configuration:
+- {name: SL_BOARD_ENABLE_VCOM, value: '1'}
+- {name: SL_USART0_DMA_CONFIG_ENABLE, value: '0'}
+- {name: SL_USART_MODE, value: 'SL_USART_MODE_ASYNCHRONOUS'}
+- {name: configTOTAL_HEAP_SIZE, value: 56320}
+- {name: configCHECK_FOR_STACK_OVERFLOW, value: 2}
+- {name: MBEDTLS_SSL_CIPHERSUITES, value: 'MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256'}
+- {name: SL_MBEDTLS_SSL_IN_CONTENT_LEN, value: 4096}
+- {name: SL_MBEDTLS_SSL_OUT_CONTENT_LEN, value: 4096}
+config_file:
+  - path: ../../config/sl_si91x_usart_common_config.h
+    override:
+      component: "%extension-wiseconnect3_sdk%sl_usart"
+      file_id: usart_config
+ui_hints:
+  highlight:
+  - {path: readme.md, focus: true}
+sdk_extension:
+- {id: wiseconnect3_sdk, version: 3.5.0}
+- {id: orbit_917, version: 0.0.1}
+post_build:
+- {path: ../../DevS_Orbit_PoC.slpb}
+

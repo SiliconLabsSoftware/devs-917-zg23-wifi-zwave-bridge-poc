@@ -1,0 +1,70 @@
+id: orbit_917_app_net
+label: Orbit 917 network application
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides network application for Orbit 917 project.
+provides:
+  - name: orbit_917_app_net
+
+requires:
+  - name: orbit_917_app_common
+  - name: orbit_917_lib
+
+include:
+  - path: apps/ip_bridge
+    file_list:
+      - path: sl_bridge.h
+      - path: sl_bridge_ip_assoc.h
+      - path: sl_bridge_temp_assoc.h
+      - path: sl_classic_zip_node.h
+  - path: apps/ip_translate
+    file_list:
+      - path: ipv46_if_handler.h
+      - path: sl_zw_resource.h
+      - path: ipv46_nat.h
+      - path: multicast_tlv.h
+      - path: ipv46_internal.h
+  - path: apps/Net
+    file_list:
+      - path: ZW_zip_classcmd.h
+      - path: ZW_udp_server.h
+      - path: sl_udp_utils.h
+  - path: apps/transport
+    file_list:
+      - path: Secure_learnRequired.h
+      - path: sl_zw_send_request.h
+      - path: sc_types.h
+      - path: ZW_PRNG.h
+      - path: sl_ts_common.h
+      - path: sl_zw_ip_frm.h
+      - path: sl_security_scheme0.h
+      - path: sl_zw_send_data.h
+      - path: sl_zw_frm.h
+      - path: sl_ts_s0.h
+      - path: Secure_learn.h
+      - path: sl_ts_param.h
+      - path: sl_ts_aes.h
+
+source:
+  - path: apps/ip_bridge/sl_bridge_temp_assoc.c
+  - path: apps/ip_bridge/sl_bridge_ip_assoc.c
+  - path: apps/ip_bridge/sl_classic_zip_node.c
+  - path: apps/ip_bridge/sl_bridge.c
+  - path: apps/ip_translate/
+  - path: apps/ip_translate/ipv46_nat.c
+  - path: apps/ip_translate/multicast_tlv.c
+  - path: apps/ip_translate/sl_zw_resource.c
+  - path: apps/ip_translate/ipv46_if_handler.c
+  - path: apps/Net/sl_udp_utils.c
+  - path: apps/Net/ZW_udp_server.c
+  - path: apps/transport/Secure_learn.c
+  - path: apps/transport/sl_zw_send_request.c
+  - path: apps/transport/sl_security_scheme0.c
+  - path: apps/transport/sl_ts_s0.c
+  - path: apps/transport/ZW_PRNG.c
+  - path: apps/transport/sl_zw_frm.c
+  - path: apps/transport/sl_zw_ip_frm.c
+  - path: apps/transport/sl_ts_aes.c
+  - path: apps/transport/sl_zw_send_data.c
+  - path: apps/transport/sl_ts_common.c

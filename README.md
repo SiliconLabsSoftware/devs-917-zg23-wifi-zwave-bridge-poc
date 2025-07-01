@@ -1,5 +1,5 @@
-# Developer Services template project
-** TODO **Put project introduction here. 1-2 sentence about the project.
+# Wi-Fi/Z-Wave Long Range (LR) bridge gateway
+This project demonstrates a Wi-Fi/Z-Wave Long Range (LR) bridge gateway. The gateway will act as a bridge between Z-Wave devices and Orbit servers, enabling communication and control via a TLS socket connection.
 ## How to use the template
 1. Import the [basic ruleset](.github/rulesets/Silabs-basic-ruleset-internal.json). Follow the official GitHub [guide](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-rulesets-for-repositories-in-your-organization#importing-a-ruleset).
 2. Create your sw projects under [projects/](projects/) folder.

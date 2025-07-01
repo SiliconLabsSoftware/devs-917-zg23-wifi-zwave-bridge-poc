@@ -1,0 +1,54 @@
+id: orbit_917_app_zwave
+label: Orbit 917 Z-Wave application
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides Z-Wave application for Orbit 917 project.
+provides:
+  - name: orbit_917_app_zwave
+requires:
+  - name: orbit_917_app_common
+  - name: orbit_917_lib
+  - name: orbit_917_module
+
+include:
+  - path: apps/Z-Wave/include
+    file_list:
+      - path: ZW_nodemask_api.h
+      - path: config_lib.h
+      - path: ZW_transport_api.h
+      - path: ZW_controller_api_ex.h
+      - path: ZW_mem_api.h
+      - path: ZW_controller_static_api.h
+      - path: ZW_sysdefs.h
+      - path: ZW_classcmd.h
+      - path: ZW_typedefs.h
+      - path: ZW_nvr_api.h
+      - path: ZW_classcmd_ex.h
+      - path: ZW_timer_api.h
+      - path: ZW_controller_api.h
+      - path: ZW_basis_api.h
+      - path: ZW_controller_bridge_api.h
+      - path: ZW_security_api.h
+      - path: ZW_SerialAPI.h
+  - path: apps/Z-Wave/CC
+    file_list:
+      - path: zwdb.h
+      - path: CC_Irrigation.h
+      - path: CC_FirmwareUpdate.h
+      - path: CC_InclusionController.h
+      - path: CC_NetworkManagement.h
+      - path: RD_internal.h
+      - path: zw_network_info.h
+      - path: CC_Version.h
+      - path: CC_Binary_switch.h
+
+source:
+  - path: apps/Z-Wave/CC/CC_Irrigation.c
+  - path: apps/Z-Wave/CC/CC_FirmwareUpdate.c
+  - path: apps/Z-Wave/CC/CC_Version.c
+  - path: apps/Z-Wave/CC/CC_NetworkManagement.c
+  - path: apps/Z-Wave/CC/CC_Binary_switch.c
+  - path: apps/Z-Wave/CC/zwdb.c
+  - path: apps/Z-Wave/CC/RD_internal.c
+  - path: apps/Z-Wave/CC/CC_InclusionController.c

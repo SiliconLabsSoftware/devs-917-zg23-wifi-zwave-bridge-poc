@@ -1,0 +1,18 @@
+id: orbit_917_app_fwup
+label: Orbit 917 firmware upgradation application
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides firmware upgradation application for Orbit 917 project.
+provides:
+  - name: orbit_917_app_fwup
+requires:
+  - name: orbit_917_app_common
+
+include:
+  - path: apps/firmware_upgrade
+    file_list:
+      - path: firmware_upgradation.h
+
+source:
+  - path: apps/firmware_upgrade/firmware_upgradation.c
