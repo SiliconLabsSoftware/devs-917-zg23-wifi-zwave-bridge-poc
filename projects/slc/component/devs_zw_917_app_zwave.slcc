@@ -1,15 +1,15 @@
-id: orbit_917_app_zwave
-label: Orbit 917 Z-Wave application
+id: devs_zw_917_app_zwave
+label: si917 Z-Wave application
 package: Z-Wave
 category: Z-Wave
 quality: experimental
-description: This component provides Z-Wave application for Orbit 917 project.
+description: This component provides Z-Wave application for si917 project.
 provides:
-  - name: orbit_917_app_zwave
+  - name: devs_zw_917_app_zwave
 requires:
-  - name: orbit_917_app_common
-  - name: orbit_917_lib
-  - name: orbit_917_module
+  - name: devs_zw_917_app_common
+  - name: devs_zw_917_lib
+  - name: devs_zw_917_module
 
 include:
   - path: apps/Z-Wave/include

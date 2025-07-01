@@ -1,14 +1,14 @@
-id: orbit_917_app_common
-label: Orbit 917 common application
+id: devs_zw_917_app_common
+label: Si917 common application
 package: Z-Wave
 category: Z-Wave
 quality: experimental
-description: This component provides common application API for Orbit 917 project.
+description: This component provides common application API for Si917 project.
 provides:
-  - name: orbit_917_app_common
+  - name: devs_zw_917_app_common
 requires:
-  - name: orbit_917_lib
-  - name: orbit_917_utils
+  - name: devs_zw_917_lib
+  - name: devs_zw_917_utils
 include:
   - path: apps/Common
     file_list:

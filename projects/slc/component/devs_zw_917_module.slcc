@@ -1,11 +1,11 @@
-id: orbit_917_module
-label: Orbit 917 modules
+id: devs_zw_917_module
+label: si917 modules
 package: Z-Wave
 category: Z-Wave
 quality: experimental
-description: This component provides common modules APIs for Orbit 917 project.
+description: This component provides common modules APIs for si917 project.
 provides:
-  - name: orbit_917_module
+  - name: devs_zw_917_module
 
 include:
   - path: modules

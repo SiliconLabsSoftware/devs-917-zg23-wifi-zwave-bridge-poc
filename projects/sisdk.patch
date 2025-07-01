@@ -1,21 +1,14 @@
 diff --git a/util/third_party/lwip/lwip/src/api/sockets.c b/util/third_party/lwip/lwip/src/api/sockets.c
-index cb7df914f..2c7846cbe 100644
+index cb7df914f..4eb42f6fc 100644
 --- a/util/third_party/lwip/lwip/src/api/sockets.c
 +++ b/util/third_party/lwip/lwip/src/api/sockets.c
-@@ -1156,6 +1156,7 @@ lwip_recvfrom_udp_raw(struct lwip_sock *sock, int flags, struct msghdr *msg, u16
- 
-   if (msg->msg_control) {
-     u8_t wrote_msg = 0;
-+    socklen_t msg_ctrlen = 0;
- #if LWIP_NETBUF_RECVINFO
-     /* Check if packet info was recorded */
-     if (buf->flags & NETBUF_FLAG_DESTADDR) {
-@@ -1175,6 +1176,22 @@ lwip_recvfrom_udp_raw(struct lwip_sock *sock, int flags, struct msghdr *msg, u16
+@@ -1175,6 +1175,23 @@ lwip_recvfrom_udp_raw(struct lwip_sock *sock, int flags, struct msghdr *msg, u16
            msg->msg_flags |= MSG_CTRUNC;
          }
  #endif /* LWIP_IPV4 */
 +      } else if (IP_IS_V6(&buf->toaddr)) {
 +#if LWIP_IPV6
++        socklen_t msg_ctrlen = 0;
 +        if (msg->msg_controllen >= CMSG_SPACE(sizeof(struct in6_pktinfo))) {
 +          struct cmsghdr *chdr = CMSG_FIRSTHDR(msg); /* This will always return a header!! */
 +          struct in6_pktinfo *pkti = (struct in6_pktinfo *)CMSG_DATA(chdr);

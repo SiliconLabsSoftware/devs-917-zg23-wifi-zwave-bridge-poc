@@ -5,10 +5,9 @@
   "name" : "Silicon-Laboratories",
   "documentNamespace" : "https://silabs.com",
   "creationInfo" : {
-    "created" : "2025-06-30T08:57:29.848011067Z",
+    "created" : "2025-07-01T07:12:47.715109700Z",
     "creators" : [ "Tool: Silicon Labs Configuration Tooling" ]
   },
-  "comment" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)",
   "documentDescribes" : [ "SPDXRef-wiseconnect3_sdk-3.5.0", "SPDXRef-simplicity_sdk-2025.6.0" ],
   "packages" : [ {
     "SPDXID" : "SPDXRef-wiseconnect3_sdk-3.5.0",
@@ -886,7 +885,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-ecode",
@@ -894,7 +893,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-freertos",
@@ -902,7 +901,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "MSLA"
   }, {
     "SPDXID" : "SPDXRef-freertos-11.1.0",
@@ -925,7 +924,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "BSD-3-Clause"
   }, {
     "SPDXID" : "SPDXRef-lwip_app_mdns-2.1.2",
@@ -948,7 +947,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Apache-2.0"
   }, {
     "SPDXID" : "SPDXRef-mbedtls_aes-v3.6.2",
@@ -966,7 +965,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib AND Apache-2.0"
   }, {
     "SPDXID" : "SPDXRef-mbedtls_core-v3.6.2",
@@ -984,7 +983,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-bit",
@@ -992,7 +991,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-slist",
@@ -1000,7 +999,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-lwip_netif_ethernet",
@@ -1008,7 +1007,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "BSD-3-Clause"
   }, {
     "SPDXID" : "SPDXRef-lwip_netif_ethernet-2.1.2",
@@ -1031,7 +1030,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Apache 2.0"
   }, {
     "SPDXID" : "SPDXRef-freertos_kernel_cortexm-11.1.0",
@@ -1054,7 +1053,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-nvm3_default_config",
@@ -1062,7 +1061,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-psa_crypto_config",
@@ -1070,7 +1069,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib AND Apache-2.0"
   }, {
     "SPDXID" : "SPDXRef-psa_crypto_config-v3.6.2",
@@ -1088,7 +1087,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_main_memory_init",
@@ -1096,7 +1095,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-atomic",
@@ -1104,7 +1103,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-code_classification",
@@ -1112,7 +1111,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_main_kernel",
@@ -1120,7 +1119,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-status",
@@ -1128,7 +1127,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-lwip_core",
@@ -1136,7 +1135,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "BSD-3-Clause"
   }, {
     "SPDXID" : "SPDXRef-lwip_core-2.1.2",
@@ -1159,7 +1158,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-cmsis_os2_ext_task_register",
@@ -1167,7 +1166,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-cmsis_rtos2_tick",
@@ -1175,7 +1174,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Apache 2.0"
   }, {
     "SPDXID" : "SPDXRef-cmsis_rtos2_tick-5.8.0",
@@ -1198,7 +1197,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-lwip_port_freertos",
@@ -1206,7 +1205,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "BSD-3-Clause"
   }, {
     "SPDXID" : "SPDXRef-lwip_port_freertos-2.1.2",
@@ -1229,7 +1228,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-nvm3_default",
@@ -1237,7 +1236,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-mbedtls_source",
@@ -1245,7 +1244,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Apache-2.0"
   }, {
     "SPDXID" : "SPDXRef-mbedtls_source-v3.6.2",
@@ -1263,7 +1262,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-mbedtls_slcrypto_driver",
@@ -1271,7 +1270,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-event_handler",
@@ -1279,7 +1278,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_string",
@@ -1287,7 +1286,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-nvm3_default_flash_backend",
@@ -1295,7 +1294,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-lwip_api",
@@ -1303,7 +1302,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "BSD-3-Clause"
   }, {
     "SPDXID" : "SPDXRef-lwip_api-2.1.2",
@@ -1326,7 +1325,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Apache 2.0"
   }, {
     "SPDXID" : "SPDXRef-cmsis_rtos2_init-5.8.0",
@@ -1349,7 +1348,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_assert",
@@ -1357,7 +1356,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-cmsis_rtos2_headers",
@@ -1365,7 +1364,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Apache 2.0"
   }, {
     "SPDXID" : "SPDXRef-cmsis_rtos2_headers-5.8.0",
@@ -1388,7 +1387,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_core",
@@ -1396,7 +1395,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-cmsis_core",
@@ -1404,7 +1403,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Apache 2.0"
   }, {
     "SPDXID" : "SPDXRef-cmsis_core-5.8.0",
@@ -1427,7 +1426,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sleeptimer",
@@ -1435,7 +1434,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-psa_crypto_common",
@@ -1443,7 +1442,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Apache-2.0"
   }, {
     "SPDXID" : "SPDXRef-psa_crypto_common-v3.6.2",
@@ -1461,7 +1460,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-mbedtls_config",
@@ -1469,7 +1468,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib AND Apache-2.0"
   }, {
     "SPDXID" : "SPDXRef-mbedtls_config-v3.6.2",
@@ -1487,7 +1486,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_main_process_action",
@@ -1495,7 +1494,7 @@
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "supplier" : "Organization: NOASSERTION",
     "licenseConcluded" : "Zlib"
   } ],
   "relationships" : [ {

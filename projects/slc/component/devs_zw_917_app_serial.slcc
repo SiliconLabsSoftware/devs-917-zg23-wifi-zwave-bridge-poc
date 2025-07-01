@@ -1,13 +1,13 @@
-id: orbit_917_app_serial
-label: Orbit 917 serial application
+id: devs_zw_917_app_serial
+label: si917 serial application
 package: Z-Wave
 category: Z-Wave
 quality: experimental
-description: This component provides serial application API for Orbit 917 project.
+description: This component provides serial application API for si917 project.
 provides:
-  - name: orbit_917_app_serial
+  - name: devs_zw_917_app_serial
 requires:
-  - name: orbit_917_app_common
+  - name: devs_zw_917_app_common
 
 include:
   - path: apps/SerialAPI

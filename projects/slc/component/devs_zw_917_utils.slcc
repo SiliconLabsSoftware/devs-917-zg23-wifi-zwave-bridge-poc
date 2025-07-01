@@ -1,11 +1,11 @@
-id: orbit_917_utils
-label: Orbit 917 Utilities
+id: devs_zw_917_utils
+label: si917 Utilities
 package: Z-Wave
 category: Z-Wave
 quality: experimental
-description: This component provides utilities for Orbit 917 project.
+description: This component provides utilities for si917 project.
 provides:
-  - name: orbit_917_utils
+  - name: devs_zw_917_utils
 
 include:
   - path: utls

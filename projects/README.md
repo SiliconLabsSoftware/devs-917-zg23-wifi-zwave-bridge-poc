@@ -83,7 +83,7 @@ BLE (Bluetooth Low Energy)
 <p align="center">
   <img src=resources/readme/build-guide-5.png>
 </p>
-7. After the build process has completed, in folder "Binaries", right click "DevS_Orbit_PoC.s37" then select "Flash to Device".
+7. After the build process has completed, in folder "Binaries", right click "devs-917-zg23-WiFi-Zwave-bridge-poc.s37" then select "Flash to Device".
 <p align="center">
   <img src=resources/readme/build-guide-6.png>
 </p>

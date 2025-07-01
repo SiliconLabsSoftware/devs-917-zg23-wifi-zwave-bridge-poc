@@ -23,11 +23,11 @@ generate()
 
     set +x
     echo "========================================================================================================="
-    echo "Generate orbit-917-zg23 project"
+    echo "Generate devs-917-zg23 project"
     echo "========================================================================================================="
     set -x
     "${repo_dir}/script/generate" \
-        "${repo_dir}/slc/project/DevS_Orbit_PoC.slcp" \
+        "${repo_dir}/slc/project/devs-917-zg23-WiFi-Zwave-bridge-poc.slcp" \
         "${slc_generated_projects_dir}/si91x_zg23" \
         "${board}"
 }
@@ -49,7 +49,7 @@ build_si91x_zg23()
     else
         echo "Warning: ${lwipopts_file} not found."
     fi
-    make -f "orbit-917-zg23.Makefile"
+    make -f "devs-917-zg23.Makefile"
 
     cd "${repo_dir}"
 }

@@ -1,10 +1,3 @@
-# TERMS OF USE - SILICON LABORATORIES INC.
-# (With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'
-# review and analysis of the code version when released.  It is provided "AS IS" and does not modify, change or alter
-# the terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements
-# associated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no
-# warranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses
-# referenced in this SBOM.)
 SPDXVersion: SPDX-2.3
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
@@ -13,7 +6,7 @@ DocumentNamespace: https://silabs.com
 
 ## Creation Information
 Creator: Organization: Silicon Laboratories, Inc.
-Created: 2025-06-30T08:57:29.848011067Z
+Created: 2025-07-01T07:12:47.715109700Z
 ## Relationships
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-wiseconnect3_sdk-3.5.0
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-simplicity_sdk-2025.6.0
@@ -1375,7 +1368,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-brd4002a
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-brd4002a CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1386,7 +1379,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-ecode
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-ecode CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1397,7 +1390,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-freertos
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: MSLA
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-freertos CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1423,7 +1416,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-lwip_app_mdns
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: BSD-3-Clause
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-lwip_app_mdns CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1449,7 +1442,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_aes
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Apache-2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_aes CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1474,7 +1467,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_core
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib AND Apache-2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1499,7 +1492,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_main
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_main CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1510,7 +1503,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-bit
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-bit CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1521,7 +1514,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-slist
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-slist CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1532,7 +1525,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-lwip_netif_ethernet
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: BSD-3-Clause
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-lwip_netif_ethernet CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1558,7 +1551,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-freertos_kernel_cortexm
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Apache 2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-freertos_kernel_cortexm CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1584,7 +1577,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-nvm3_source
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-nvm3_source CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1595,7 +1588,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-nvm3_default_config
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-nvm3_default_config CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1606,7 +1599,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-psa_crypto_config
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib AND Apache-2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-psa_crypto_config CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1631,7 +1624,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_threading_alt_cmsis_rtos2
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_threading_alt_cmsis_rtos2 CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1642,7 +1635,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_main_memory_init
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_main_memory_init CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1653,7 +1646,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-atomic
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-atomic CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1664,7 +1657,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-code_classification
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-code_classification CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1675,7 +1668,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_main_kernel
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_main_kernel CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1686,7 +1679,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-status
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-status CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1697,7 +1690,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-lwip_core
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: BSD-3-Clause
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-lwip_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1723,7 +1716,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-toolchain_variant_arm
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-toolchain_variant_arm CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1734,7 +1727,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-cmsis_os2_ext_task_register
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-cmsis_os2_ext_task_register CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1745,7 +1738,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-cmsis_rtos2_tick
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Apache 2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-cmsis_rtos2_tick CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1771,7 +1764,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-trustzone_unaware
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-trustzone_unaware CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1782,7 +1775,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-lwip_port_freertos
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: BSD-3-Clause
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-lwip_port_freertos CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1808,7 +1801,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sli_psec_osal
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sli_psec_osal CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1819,7 +1812,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-nvm3_default
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-nvm3_default CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1830,7 +1823,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_source
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Apache-2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_source CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1855,7 +1848,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-cmsis_common
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-cmsis_common CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1866,7 +1859,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_slcrypto_driver
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_slcrypto_driver CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1877,7 +1870,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-event_handler
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-event_handler CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1888,7 +1881,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_string
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_string CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1899,7 +1892,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-nvm3_default_flash_backend
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-nvm3_default_flash_backend CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1910,7 +1903,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-lwip_api
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: BSD-3-Clause
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-lwip_api CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1936,7 +1929,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-cmsis_rtos2_init
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Apache 2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-cmsis_rtos2_init CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1962,7 +1955,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_slcrypto
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_slcrypto CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1973,7 +1966,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_assert
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_assert CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -1984,7 +1977,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-cmsis_rtos2_headers
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Apache 2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-cmsis_rtos2_headers CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2010,7 +2003,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-component_catalog
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-component_catalog CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2021,7 +2014,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_core
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2032,7 +2025,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-cmsis_core
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Apache 2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-cmsis_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2058,7 +2051,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-emlib_core
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-emlib_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2069,7 +2062,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sleeptimer
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sleeptimer CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2080,7 +2073,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-psa_crypto_common
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Apache-2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-psa_crypto_common CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2105,7 +2098,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_common
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_common CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2116,7 +2109,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_config
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib AND Apache-2.0
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-mbedtls_config CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2141,7 +2134,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_main_init
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_main_init CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0
@@ -2152,7 +2145,7 @@ SPDXID: SPDXRef-simplicity_sdk-2025.6.0-sl_main_process_action
 PackageVersion: 2025.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageSupplier: Organization: NOASSERTION
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.0-sl_main_process_action CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.0

@@ -1,11 +1,11 @@
-id: orbit_917_mbedtls
-label: Orbit 917 mbedtls
+id: devs_zw_917_mbedtls
+label: si917 mbedtls
 package: Z-Wave
 category: Z-Wave
 quality: experimental
-description: This component provides mbedtls source code for Orbit 917 project.
+description: This component provides mbedtls source code for si917 project.
 provides:
-  - name: orbit_917_mbedtls
+  - name: devs_zw_917_mbedtls
 
 include:
   - path: mbedtls

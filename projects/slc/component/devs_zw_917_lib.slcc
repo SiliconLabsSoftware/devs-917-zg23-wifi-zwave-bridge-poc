@@ -1,11 +1,11 @@
-id: orbit_917_lib
-label: Orbit 917 Third Party Library
+id: devs_zw_917_lib
+label: si917 Third Party Library
 package: Z-Wave
 category: Z-Wave
 quality: experimental
-description: This component provides third party library for Orbit 917 project.
+description: This component provides third party library for si917 project.
 provides:
-  - name: orbit_917_lib
+  - name: devs_zw_917_lib
 
 include:
   - path: .
