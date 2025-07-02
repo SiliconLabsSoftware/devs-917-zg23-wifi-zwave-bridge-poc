@@ -51,7 +51,7 @@ trust_sdk_and_extensions()
     # List of dirs containing SDK extensions to trust
     # NOTE: this list must only contain absolute paths since it will be used to generate symlinks
     extension_dirs=(
-        # DevS_Orbit_PoC extension
+        # devs-917-zg23-WiFi-Zwave-bridge-poc extension
         "${repo_dir}"
         "$WISECONNECT_SDK_DIR"
     )
@@ -149,7 +149,7 @@ generate()
 
     # Define generation variables
     local slcp=${1?A .slcp file is expected as the first argument}
-    local project_name="orbit-917-zg23"
+    local project_name="devs-917-zg23"
     local generation_dir=${2?A generation output dir is expected as the second argument}
     local board=${3?A board is expected as the third argument}
     local build_dir="${repo_dir}/build/${board}"

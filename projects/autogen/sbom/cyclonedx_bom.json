@@ -3,13 +3,9 @@
   "specVersion" : "1.6",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2025-06-30T08:57:29.848011067Z",
+    "timestamp" : "2025-07-01T07:12:47.715109700Z",
     "authors" : [ {
       "name" : "Silicon Laboratories, Inc."
-    } ],
-    "properties" : [ {
-      "name" : "Silicon Labs Disclaimer",
-      "value" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)"
     } ]
   },
   "components" : [ {
@@ -997,9 +993,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:brd4002a",
       "name" : "BRD4002A",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1009,9 +1002,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:ecode",
       "name" : "EMDRV Common Headers",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1021,9 +1011,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:freertos",
       "name" : "FreeRTOS Kernel",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "MSLA"
       } ],
@@ -1053,9 +1040,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:lwip_app_mdns",
       "name" : "LWIP mDNS High Layer Application",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "BSD-3-Clause"
       } ],
@@ -1085,9 +1069,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:mbedtls_aes",
       "name" : "AES Block Cipher",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Apache-2.0"
       } ],
@@ -1116,9 +1097,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:mbedtls_core",
       "name" : "Mbed TLS",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib AND Apache-2.0"
       } ],
@@ -1147,9 +1125,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_main",
       "name" : "System Setup (sl_main)",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1159,9 +1134,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:bit",
       "name" : "Bit Operations Library",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1171,9 +1143,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:slist",
       "name" : "Single Link List",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1183,9 +1152,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:lwip_netif_ethernet",
       "name" : "LWIP generic network interface device drivers for ethernet",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "BSD-3-Clause"
       } ],
@@ -1215,9 +1181,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:freertos_kernel_cortexm",
       "name" : "FreeRTOS Kernel ARM Cortex-M Port",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Apache 2.0"
       } ],
@@ -1247,9 +1210,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:nvm3_source",
       "name" : "NVM3 Core (source)",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1259,9 +1219,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:nvm3_default_config",
       "name" : "NVM3 Default Config",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1271,9 +1228,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:psa_crypto_config",
       "name" : "Configuration",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib AND Apache-2.0"
       } ],
@@ -1302,9 +1256,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:mbedtls_threading_alt_cmsis_rtos2",
       "name" : "Silicon Labs Threading support Mbed TLS",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1314,9 +1265,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_main_memory_init",
       "name" : "sl_main Setup",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1326,9 +1274,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:atomic",
       "name" : "Atomic Operations Library",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1338,9 +1283,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:code_classification",
       "name" : "Code Classification",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1350,9 +1292,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_main_kernel",
       "name" : "SL Main Kernel",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1362,9 +1301,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:status",
       "name" : "Status Codes Definitions",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1374,9 +1310,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:lwip_core",
       "name" : "LightWeight IP (LWIP) core stack",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "BSD-3-Clause"
       } ],
@@ -1406,9 +1339,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:toolchain_variant_arm",
       "name" : "Toolchain for ARM",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1418,9 +1348,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:cmsis_os2_ext_task_register",
       "name" : "Task registers abstraction layer",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1430,9 +1357,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:cmsis_rtos2_tick",
       "name" : "CMSIS-RTOS2 OS Tick",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Apache 2.0"
       } ],
@@ -1462,9 +1386,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:trustzone_unaware",
       "name" : "TrustZone Unaware",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1474,9 +1395,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:lwip_port_freertos",
       "name" : "LwIP FreeRTOS port ",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "BSD-3-Clause"
       } ],
@@ -1506,9 +1424,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sli_psec_osal",
       "name" : "OS Abstraction Layer",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1518,9 +1433,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:nvm3_default",
       "name" : "NVM3 Default Instance",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1530,9 +1442,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:mbedtls_source",
       "name" : "Source Code",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Apache-2.0"
       } ],
@@ -1561,9 +1470,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:cmsis_common",
       "name" : "Common APIs for CMSIS-Compliant Kernels",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1573,9 +1479,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:mbedtls_slcrypto_driver",
       "name" : "Drivers for Silicon Labs Crypto Acceleration",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1585,9 +1488,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:event_handler",
       "name" : "Event Handler",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1597,9 +1497,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_string",
       "name" : "String Functions",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1609,9 +1506,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:nvm3_default_flash_backend",
       "name" : "NVM3 back-end for default instance in flash",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1621,9 +1515,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:lwip_api",
       "name" : "LightWeight IP (LWIP) API",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "BSD-3-Clause"
       } ],
@@ -1653,9 +1544,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:cmsis_rtos2_init",
       "name" : "CMSIS-RTOS2 Initialization",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Apache 2.0"
       } ],
@@ -1685,9 +1573,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:mbedtls_slcrypto",
       "name" : "Silicon Labs Mbed TLS support",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1697,9 +1582,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_assert",
       "name" : "Assert Functions",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1709,9 +1591,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:cmsis_rtos2_headers",
       "name" : "CMSIS-RTOS2 Headers",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Apache 2.0"
       } ],
@@ -1741,9 +1620,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:component_catalog",
       "name" : "Component Catalog",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1753,9 +1629,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_core",
       "name" : "core",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1765,9 +1638,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:cmsis_core",
       "name" : "CMSIS-Core",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Apache 2.0"
       } ],
@@ -1797,9 +1667,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:emlib_core",
       "name" : "CORE",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1809,9 +1676,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sleeptimer",
       "name" : "Sleep Timer",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1821,9 +1685,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:psa_crypto_common",
       "name" : "Common",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Apache-2.0"
       } ],
@@ -1852,9 +1713,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_common",
       "name" : "Common Functions",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1864,9 +1722,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:mbedtls_config",
       "name" : "Configuration",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib AND Apache-2.0"
       } ],
@@ -1895,9 +1750,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_main_init",
       "name" : "sl main Init",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]
@@ -1907,9 +1759,6 @@
       "bom-ref" : "simplicity_sdk:2025.6.0:sl_main_process_action",
       "name" : "sl_main Process Action",
       "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
       "licenses" : [ {
         "expression" : "Zlib"
       } ]

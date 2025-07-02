@@ -1,15 +1,15 @@
-id: orbit_917_app_net
-label: Orbit 917 network application
+id: devs_zw_917_app_net
+label: si917 network application
 package: Z-Wave
 category: Z-Wave
 quality: experimental
-description: This component provides network application for Orbit 917 project.
+description: This component provides network application for si917 project.
 provides:
-  - name: orbit_917_app_net
+  - name: devs_zw_917_app_net
 
 requires:
-  - name: orbit_917_app_common
-  - name: orbit_917_lib
+  - name: devs_zw_917_app_common
+  - name: devs_zw_917_lib
 
 include:
   - path: apps/ip_bridge

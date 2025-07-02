@@ -1,9 +1,0 @@
-id: orbit_917
-version: 0.0.1
-description: "Orbit SiWx917 extension for Simplicity SDK Suite"
-label: "Otbir SiWx917 ZG23 Bridge"
-sdk:
-  id: simplicity_sdk
-  version: 2025.6.0
-component_path:
-  - path: slc/component

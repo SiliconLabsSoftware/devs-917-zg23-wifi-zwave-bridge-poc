@@ -1,0 +1,9 @@
+id: devs_917_zg23
+version: 0.0.1
+description: "Wifi SiWx917 extension for Simplicity SDK Suite"
+label: "Wifi SiWx917 ZG23 Bridge"
+sdk:
+  id: simplicity_sdk
+  version: 2025.6.0
+component_path:
+  - path: slc/component

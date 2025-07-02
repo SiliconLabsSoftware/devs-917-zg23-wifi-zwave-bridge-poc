@@ -3,7 +3,7 @@ parameters:
 - name: "build_dir"
 constants:
 - name: "project_name"
-  value: "DevS_Orbit_PoC"
+  value: "devs-917-zg23-WiFi-Zwave-bridge-poc"
 steps:
 - task: "create_rps"
   output: "{{build_dir}}/{{project_name}}.rps"

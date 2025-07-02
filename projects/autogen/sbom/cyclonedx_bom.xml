@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-TERMS OF USE - SILICON LABORATORIES INC.
-(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'
-review and analysis of the code version when released.  It is provided "AS IS" and does not modify, change or alter
-the terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements
-associated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no
-warranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses
-referenced in this SBOM.)
--->
 <bom xmlns="http://cyclonedx.org/schema/bom/1.6" version="1">
   <metadata>
-    <timestamp>2025-06-30T08:57:29.848011067Z</timestamp>
+    <timestamp>2025-07-01T07:12:47.715109700Z</timestamp>
     <authors>
       <author>
         <name>Silicon Laboratories, Inc.</name>
@@ -783,9 +774,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:brd4002a" type="library">
           <name>BRD4002A</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -793,9 +781,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:ecode" type="library">
           <name>EMDRV Common Headers</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -803,9 +788,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:freertos" type="library">
           <name>FreeRTOS Kernel</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>MSLA</expression>
           </licenses>
@@ -833,9 +815,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:lwip_app_mdns" type="library">
           <name>LWIP mDNS High Layer Application</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>BSD-3-Clause</expression>
           </licenses>
@@ -863,9 +842,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:mbedtls_aes" type="library">
           <name>AES Block Cipher</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Apache-2.0</expression>
           </licenses>
@@ -892,9 +868,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:mbedtls_core" type="library">
           <name>Mbed TLS</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib AND Apache-2.0</expression>
           </licenses>
@@ -921,9 +894,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_main" type="library">
           <name>System Setup (sl_main)</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -931,9 +901,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:bit" type="library">
           <name>Bit Operations Library</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -941,9 +908,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:slist" type="library">
           <name>Single Link List</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -951,9 +915,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:lwip_netif_ethernet" type="library">
           <name>LWIP generic network interface device drivers for ethernet</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>BSD-3-Clause</expression>
           </licenses>
@@ -981,9 +942,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:freertos_kernel_cortexm" type="library">
           <name>FreeRTOS Kernel ARM Cortex-M Port</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Apache 2.0</expression>
           </licenses>
@@ -1011,9 +969,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:nvm3_source" type="library">
           <name>NVM3 Core (source)</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1021,9 +976,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:nvm3_default_config" type="library">
           <name>NVM3 Default Config</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1031,9 +983,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:psa_crypto_config" type="library">
           <name>Configuration</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib AND Apache-2.0</expression>
           </licenses>
@@ -1060,9 +1009,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:mbedtls_threading_alt_cmsis_rtos2" type="library">
           <name>Silicon Labs Threading support Mbed TLS</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1070,9 +1016,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_main_memory_init" type="library">
           <name>sl_main Setup</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1080,9 +1023,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:atomic" type="library">
           <name>Atomic Operations Library</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1090,9 +1030,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:code_classification" type="library">
           <name>Code Classification</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1100,9 +1037,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_main_kernel" type="library">
           <name>SL Main Kernel</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1110,9 +1044,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:status" type="library">
           <name>Status Codes Definitions</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1120,9 +1051,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:lwip_core" type="library">
           <name>LightWeight IP (LWIP) core stack</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>BSD-3-Clause</expression>
           </licenses>
@@ -1150,9 +1078,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:toolchain_variant_arm" type="library">
           <name>Toolchain for ARM</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1160,9 +1085,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:cmsis_os2_ext_task_register" type="library">
           <name>Task registers abstraction layer</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1170,9 +1092,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:cmsis_rtos2_tick" type="library">
           <name>CMSIS-RTOS2 OS Tick</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Apache 2.0</expression>
           </licenses>
@@ -1200,9 +1119,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:trustzone_unaware" type="library">
           <name>TrustZone Unaware</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1210,9 +1126,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:lwip_port_freertos" type="library">
           <name>LwIP FreeRTOS port </name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>BSD-3-Clause</expression>
           </licenses>
@@ -1240,9 +1153,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sli_psec_osal" type="library">
           <name>OS Abstraction Layer</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1250,9 +1160,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:nvm3_default" type="library">
           <name>NVM3 Default Instance</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1260,9 +1167,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:mbedtls_source" type="library">
           <name>Source Code</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Apache-2.0</expression>
           </licenses>
@@ -1289,9 +1193,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:cmsis_common" type="library">
           <name>Common APIs for CMSIS-Compliant Kernels</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1299,9 +1200,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:mbedtls_slcrypto_driver" type="library">
           <name>Drivers for Silicon Labs Crypto Acceleration</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1309,9 +1207,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:event_handler" type="library">
           <name>Event Handler</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1319,9 +1214,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_string" type="library">
           <name>String Functions</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1329,9 +1221,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:nvm3_default_flash_backend" type="library">
           <name>NVM3 back-end for default instance in flash</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1339,9 +1228,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:lwip_api" type="library">
           <name>LightWeight IP (LWIP) API</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>BSD-3-Clause</expression>
           </licenses>
@@ -1369,9 +1255,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:cmsis_rtos2_init" type="library">
           <name>CMSIS-RTOS2 Initialization</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Apache 2.0</expression>
           </licenses>
@@ -1399,9 +1282,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:mbedtls_slcrypto" type="library">
           <name>Silicon Labs Mbed TLS support</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1409,9 +1289,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_assert" type="library">
           <name>Assert Functions</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1419,9 +1296,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:cmsis_rtos2_headers" type="library">
           <name>CMSIS-RTOS2 Headers</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Apache 2.0</expression>
           </licenses>
@@ -1449,9 +1323,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:component_catalog" type="library">
           <name>Component Catalog</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1459,9 +1330,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_core" type="library">
           <name>core</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1469,9 +1337,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:cmsis_core" type="library">
           <name>CMSIS-Core</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Apache 2.0</expression>
           </licenses>
@@ -1499,9 +1364,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:emlib_core" type="library">
           <name>CORE</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1509,9 +1371,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sleeptimer" type="library">
           <name>Sleep Timer</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1519,9 +1378,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:psa_crypto_common" type="library">
           <name>Common</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Apache-2.0</expression>
           </licenses>
@@ -1548,9 +1404,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_common" type="library">
           <name>Common Functions</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1558,9 +1411,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:mbedtls_config" type="library">
           <name>Configuration</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib AND Apache-2.0</expression>
           </licenses>
@@ -1587,9 +1437,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_main_init" type="library">
           <name>sl main Init</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>
@@ -1597,9 +1444,6 @@ referenced in this SBOM.)
         <component bom-ref="simplicity_sdk:2025.6.0:sl_main_process_action" type="library">
           <name>sl_main Process Action</name>
           <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
           <licenses>
             <expression>Zlib</expression>
           </licenses>

@@ -57,7 +57,7 @@
 #define GLOBAL_POOL_RATIO 1
 #endif
 
-#define SL_DHCP_HOST_NAME "orbit.gw"
+#define SL_DHCP_HOST_NAME "si917.gw"
 
 #if (SL_WLAN_MOCK_ENABLE)
 #define SL_MOCK_AP_SSID     "ASUS-E0"
