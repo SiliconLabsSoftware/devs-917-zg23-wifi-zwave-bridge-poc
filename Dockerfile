@@ -1,8 +1,8 @@
 ### This is a template Dockerfile for the CI/CD pipeline
 
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 
-ENV TZ=Europe/Budapest
+ENV TZ=Asia/Ho_Chi_Minh
 ENV DEBIAN_FRONTEND=noninteractive
 
 ARG ARCH=x86_64
