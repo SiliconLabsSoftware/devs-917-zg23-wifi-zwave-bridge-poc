@@ -75,8 +75,10 @@ RUN unzip /tmp/SimplicityCommander-Linux.zip -d /tmp && \
     rm -rf /tmp/SimplicityCommander-Linux/
 
 # Install GCC
-ADD $GCC_URL /
-# The ADD instruction automatically extracts the .tar.xz archive
+ADD $GCC_URL /tmp/gcc-arm.tar.xz
+RUN mkdir -p /opt/gcc-arm && \
+    tar -xf /tmp/gcc-arm.tar.xz -C /opt/gcc-arm --strip-components=1 && \
+    rm /tmp/gcc-arm.tar.xz
 
 # Create Python symlink instead of alias
 RUN ln -sf /usr/bin/python3.11 /usr/bin/python3
@@ -102,12 +104,13 @@ RUN unzip /tmp/build-wrapper-linux-x86.zip -d /opt \
 
 ENV SIMPLICITY_SDK_DIR=/simplicity_sdk/
 ENV WISECONNECT_SDK_DIR=/wiseconnect
-ENV ARM_GCC_DIR=/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi
+ENV ARM_GCC_DIR=/opt/gcc-arm
 ENV SLC_CLI_DIR=/slc_cli/bin/slc-cli/slc_cli
 ENV POST_BUILD_EXE=/commander/commander
 ENV PATH="/commander:${PATH}"
 ENV PATH="/slc_cli:${PATH}"
 ENV PATH="/usr/bin/:${PATH}"
 ENV PATH="${PATH}:/opt/build-wrapper-linux-x86/"
+ENV PATH="${PATH}:/opt/gcc-arm/bin"
 
 WORKDIR /home
