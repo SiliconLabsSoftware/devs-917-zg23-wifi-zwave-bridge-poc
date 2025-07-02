@@ -17,7 +17,7 @@ env:
   BRANCH_NAME: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.branch || github.ref }}
 jobs:
   sonarqube:
-    runs-on: silabs-internal-runner-bud-1
+    runs-on: self-hosted
     env:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
