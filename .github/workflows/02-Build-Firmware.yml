@@ -19,7 +19,7 @@ jobs:
   FW_build:
     # Choose a runner type here by commenting out the not needed one.
     # runs-on: ubuntu-24.04
-    runs-on: devs-self-hosted-runner
+    runs-on: silabs-internal-runner-bud-1
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
