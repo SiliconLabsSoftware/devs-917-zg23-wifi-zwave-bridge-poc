@@ -37,7 +37,7 @@ jobs:
             ${{ github.repository }}-build-env:latest \
             /bin/bash -c "
               cd /workspace/projects && 
-              chmod +x script/build && 
+              chmod +x script/build script/generate && 
               ./script/build -p brd4342a
             "
 

@@ -40,7 +40,7 @@ jobs:
           -w /home/${{ github.event.repository.name }}/ ${{ github.event.repository.name }}-build-env:latest /bin/sh -c "
             mkdir -p sonar-bw &&
             cd projects &&
-            chmod +x script/build && 
+            chmod +x script/build script/generate && 
             /opt/build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir sonar-bw ./script/build -p brd4342a &&
             sonar-scanner \
               -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
