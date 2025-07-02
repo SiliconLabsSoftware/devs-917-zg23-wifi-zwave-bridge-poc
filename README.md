@@ -1,59 +1,115 @@
 # Wi-Fi/Z-Wave Long Range (LR) bridge gateway
 This project demonstrates a Wi-Fi/Z-Wave Long Range (LR) bridge gateway. The gateway will act as a bridge between Z-Wave devices and Orbit servers, enabling communication and control via a TLS socket connection.
-## How to use the template
-1. Import the [basic ruleset](.github/rulesets/Silabs-basic-ruleset-internal.json). Follow the official GitHub [guide](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-rulesets-for-repositories-in-your-organization#importing-a-ruleset).
-2. Create your sw projects under [projects/](projects/) folder.
-3. Check [.gitignore](.gitignore) file and modify it if it is necessary
-4. Check the [./Dockerfile](./Dockerfile) and extend it if necessary
-5. Make sure that the whole project can be compiled with a single "make all" command.  
-   also implement "make clean"
-6. Fill out the [CODEOWNERS](./.github/CODEOWNERS) file. Here is the official github [guide](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
-7. Update and extend if needed the [sonar project file](./.github/sonar-project.properties) .
-8. **Internal projects only** Add a self-hosted runner with "devs-self-hosted-runner" name. Also add a "devs-self-hosted-runner" label to the runner.[guide](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners)
-9. Secrets, add your SonarQube token and GitHub personal access token.
-10. Check the workflow and adjust them according to the repo types (internal or public)
-11. Update this Readme file and remove this list from it.
-
 
 ## Hardware requirements
-** TODO ** List the required hw components.
+- BRD4002A Mainboard + BRD4342A Radio Board (SiWx917 Bridge)
+- BRD4002A Mainboard + EFR32xG23 Radio Board (Z-Wave NCP Controller)
+- BRD4001A Mainboard + EFR32xG23 Radio Board (Z-Wave End Device)
 
 ## Hardware Setup
-** TODO ** Create a block diagram about the components.
+Connect UART_TX, UART_RX, and GND from the Expansion Header on the Z-Wave NCP Controller board to P33 (UART_TX), P35 (UART_RX), and GND on the SiWx917 Bridge, respectively.
+
+<p align="center">
+  <img src="./resources/Images/hardware-setup-01.png" alt="Hardware Setup" />
+</p>
 
 ## Build environment setup
-** TODO ** Add steps here how to create a build environment. Remove the not supported platforms.
-### Docker
-Using Docker for the build environment has several advantages:
-- **Consistency**: Ensures the build environment is the same across all development machines.
-- **Isolation**: Keeps the build environment isolated from the host machine, avoiding conflicts.
-- **Portability**: Allows the build environment to be easily shared and reproduced.
-- **Scalability**: Simplifies scaling the build process across multiple machines.
-
-To set up the Docker-based build environment, follow these steps:
-1. Install Docker on your machine. Only Linux and MacOS platforms are supported for now.
-2. Clone the repository.
-3. Build the Docker image using the provided [Dockerfile](./Dockerfile).
-4. Run the Docker container with the necessary configurations.
-
 ### Windows
-** TODO ** With a numbered list define the process how to set up a development environment.
+
+1. **Install Dependencies**  
+   - [Simplicity Studio 5](https://www.silabs.com/developers/simplicity-studio)  
+   - [Simplicity SDK v2025.6.0](https://github.com/SiliconLabs/simplicity_sdk/releases/tag/v2025.6.0)
+
+2. **Import the Project**  
+   In Simplicity Studio 5, select:  
+   `File` → `Import...` → `More Import Options...` → `Existing Project into workspace`
+
+   <p align="center">
+     <img src="./resources/Images/build-environment-setup-01.png" alt="Import Project" />
+   </p>
+
+3. **Generate SLCP File**  
+   Open the `.slcp` file and select `Force Generation`.
+
+   <p align="center">
+     <img src="./resources/Images/build-environment-setup-02.png" alt="Generate SLCP" />
+   </p>
+
+4. **Build the Project**
+
+   <p align="center">
+     <img src="./resources/Images/build-environment-setup-03.png" alt="Build Project" />
+   </p>
+
+---
 
 ### Linux
-** TODO ** With a numbered list define the process how to set up a development environment.
 
-### MacOS
-** TODO ** With a numbered list define the process how to set up a development environment.
+1. **Install Dependencies**
 
-## Debug environment
-**TODO**
-Explain how can a developer debug this software project. Pictures are recommended.
+   ```sh
+   sudo apt-get install make
+   ```
+
+2. **Clone and Download Dependencies**
+   - [Simplicity SDK v2025.6.0](https://github.com/SiliconLabs/simplicity_sdk/releases/tag/v2025.6.0)
+   - [WiseConnect SDK v3.5.0](https://github.com/SiliconLabs/wiseconnect/releases/tag/v3.5.0)
+   - [GNU Toolchain](https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz)
+   - [SLC CLI](https://www.silabs.com/documents/login/software/slc_cli_linux.zip)
+   - [Simplicity Commander](https://www.silabs.com/documents/login/software/SimplicityCommander-Linux.zip)
+
+3. **Apply Patch to Simplicity SDK**  
+   Navigate to the Simplicity SDK folder and apply the `sisdk.path` file from the project directory:
+
+   ```sh
+   git apply /path/to/sisdk.path
+   ```
+
+4. **Set Environment Variables**  
+   Replace the paths below with your actual installation locations:
+
+   ```sh
+   export SIMPLICITY_SDK_DIR=~/path/to/simplicity_sdk
+   export WISECONNECT_SDK_DIR=~/path/to/wiseconnect_sdk
+   export ARM_GCC_DIR=~/path/to/arm-gnu-toolchain
+   export SLC_CLI_DIR=~/path/to/slc_cli
+   export POST_BUILD_EXE=~/path/to/SimplicityCommander
+   ```
+
+5. **Build Command**  
+   Run the following command to build the project:
+
+   ```sh
+   ./script/build b4342a -p
+   ```
+
+   The output will be located in `build/b4342a/slc/si91x_zg23/build/debug/`.
+
+---
+
+## Debug Environment
+
+Logs from the Bridge and NCP can be monitored using Simplicity Studio 5.
+
+<p align="center">
+  <img src="./resources/Images/debug-environment-01.png" alt="Launch Device Console" />
+</p>
+
+---
+
 ## Contributing
-Please follow the [CONTRIBUTING](./.github/CONTRIBUTING.md) guideline-
+
+Please follow the [CONTRIBUTING](./.github/CONTRIBUTING.md) guidelines.
+
+---
 
 ## License
+
 See the [LICENSE.md](./LICENSE.md) file for details.
 
+---
+
 ## Secrets
+
 The following secrets are required for this project:
-- `SONAR_TOKEN`: Token to access Sonarqube servers
+- `SONAR_TOKEN`: Token to access SonarQube servers
