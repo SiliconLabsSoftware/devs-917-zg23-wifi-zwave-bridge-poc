@@ -47,6 +47,7 @@ RUN apt-get update && \
     make \
     unzip \
     bzip2 \
+    xz-utils \
     openjdk-21-jdk && \
     rm -rf /var/lib/apt/lists/*
 RUN pip install cmake --upgrade
