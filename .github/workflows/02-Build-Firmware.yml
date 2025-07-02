@@ -31,7 +31,7 @@ jobs:
         run: docker build -t ${{ github.repository }}-build-env:latest .
 
       - name: Run Docker Container
-        run: docker run --rm -v ${{ github.workspace }}:/workspace ${{ github.repository }}-build-env:latest /bin/bash -c "cd /workspace/project && ./script/build -p brd4342a"
+        run: docker run --rm -v ${{ github.workspace }}:/workspace ${{ github.repository }}-build-env:latest /bin/bash -c "cd /workspace/projects && ./script/build -p brd4342a"
 
       - name: Clean up workspace
         if: always()
