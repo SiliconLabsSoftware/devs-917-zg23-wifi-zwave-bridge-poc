@@ -72,6 +72,7 @@ ADD $COMMANDER_URL /tmp/SimplicityCommander-Linux.zip
 RUN unzip /tmp/SimplicityCommander-Linux.zip -d /tmp && \
     mkdir -p commander && \
     tar -xjf /tmp/SimplicityCommander-Linux/Commander_linux_x86_64_*.tar.bz -C /commander && \
+    ln -s /commander/commander /usr/local/bin/commander \
     rm -rf /tmp/SimplicityCommander-Linux.zip && \
     rm -rf /tmp/SimplicityCommander-Linux/
 
@@ -107,8 +108,7 @@ ENV SIMPLICITY_SDK_DIR=/simplicity_sdk/
 ENV WISECONNECT_SDK_DIR=/wiseconnect
 ENV ARM_GCC_DIR=/opt/gcc-arm
 ENV SLC_CLI_DIR=/slc_cli/bin/slc-cli/slc_cli
-ENV POST_BUILD_EXE=/commander/commander
-ENV PATH="/commander:${PATH}"
+ENV POST_BUILD_EXE=commander
 ENV PATH="/slc_cli:${PATH}"
 ENV PATH="/usr/bin/:${PATH}"
 ENV PATH="${PATH}:/opt/build-wrapper-linux-x86/"
