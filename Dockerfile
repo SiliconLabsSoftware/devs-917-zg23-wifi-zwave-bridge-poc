@@ -68,12 +68,12 @@ RUN unzip /tmp/slc_cli_linux.zip -d / && \
     rm /tmp/slc_cli_linux.zip
 
 # Install Simplicity Commander
-ADD $COMMANDER_URL /tmp/SimplicityCommander-Linux.zip
-RUN unzip /tmp/SimplicityCommander-Linux.zip -d /tmp && \
-    mkdir -p commander && \
-    tar -xjf /tmp/SimplicityCommander-Linux/Commander_linux_x86_64_*.tar.bz -C /commander && \
-    rm -rf /tmp/SimplicityCommander-Linux.zip && \
-    rm -rf /tmp/SimplicityCommander-Linux/
+RUN wget $COMMANDER_URL && \
+    unzip SimplicityCommander-Linux.zip && \
+    mkdir commander && \
+    tar -xjf SimplicityCommander-Linux/Commander_linux_x86_64_*.tar.bz commander && \
+    rm -rf SimplicityCommander-Linux.zip && \
+    rm -rf SimplicityCommander-Linux/
 
 # Install GCC
 ADD $GCC_URL /tmp/gcc-arm.tar.xz
@@ -107,8 +107,8 @@ ENV SIMPLICITY_SDK_DIR=/simplicity_sdk/
 ENV WISECONNECT_SDK_DIR=/wiseconnect
 ENV ARM_GCC_DIR=/opt/gcc-arm
 ENV SLC_CLI_DIR=/slc_cli/bin/slc-cli/slc_cli
-ENV POST_BUILD_EXE=commander
-ENV PATH="/slc_cli:${PATH}"
+ENV POST_BUILD_EXE=/commander/commander
+ENV PATH="/commander:${PATH}"
 ENV PATH="/usr/bin/:${PATH}"
 ENV PATH="${PATH}:/opt/build-wrapper-linux-x86/"
 ENV PATH="${PATH}:/opt/gcc-arm/bin"
