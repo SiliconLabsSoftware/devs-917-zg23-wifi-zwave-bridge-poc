@@ -19,7 +19,7 @@ jobs:
   FW_build:
     # Choose a runner type here by commenting out the not needed one.
     # runs-on: ubuntu-22.04
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker run --rm \
+          docker run -u root --rm \
             -v ${{ github.workspace }}:/workspace \
             ${{ github.repository }}-build-env:latest \
             /bin/bash -c "
