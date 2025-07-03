@@ -110,7 +110,7 @@ typedef uint8_t  nodemask_t[ZW_MAX_NODES / 8 + 1]; // +1 to accommodate LR node 
 /**
  * Add a nodeID to a node list bitmask.
  * @param nodeID must be in range 1..232 or range 256..4000.
- * @param[inout] nodelist_mask Node list to modify.
+ * @param[in out] nodelist_mask Node list to modify.
  * @return 0 on success, 1 otherwise.
  */
 int nodemask_add_node(uint16_t nodeID, nodemask_t nodelist_mask);
@@ -126,7 +126,7 @@ int nodemask_test_node(uint16_t nodeID, const nodemask_t nodelist_mask);
 /**
  * Remove a nodeID from a node list bitmask.
  * @param nodeID must be in range 1..232 or range 256..4000.
- * @param[inout] nodelist_mask Node list to modify.
+ * @param[in out] nodelist_mask Node list to modify.
  * @return 0 on success, 1 otherwise.
  */
 int nodemask_remove_node(uint16_t nodeID, nodemask_t nodelist_mask);

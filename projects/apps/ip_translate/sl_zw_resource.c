@@ -1153,7 +1153,7 @@ static int sli_rd_ep_probe_update_check(rd_ep_database_entry_t *ep)
   if (ep->node == 0) {
     return 0;
   }
-  DBG_PRINTF("EP probe nd=%i (flags 0x%02x) ep =%d state=%s\n",
+  DBG_PRINTF("EP probe rd_node=%i (flags 0x%02x) ep =%d state=%s\n",
              ep->node->nodeid,
              ep->node->security_flags,
              ep->endpoint_id,
@@ -1342,7 +1342,7 @@ void send_suc_id_timeout(sl_sleeptimer_timer_handle_t *handle, void *use)
 
 void send_suc_id(uint8_t status)
 {
-  rd_node_database_entry_t *nd;
+  rd_node_database_entry_t *rd_node;
   static nodeid_t current_send_suc_id_dest = 0;
 
   if (status != TRANSMIT_COMPLETE_OK) {
@@ -1356,16 +1356,16 @@ void send_suc_id(uint8_t status)
       continue;
     }
 
-    nd = rd_node_get_raw(current_send_suc_id_dest);
-    if (!nd) {
+    rd_node = rd_node_get_raw(current_send_suc_id_dest);
+    if (!rd_node) {
       continue;
     }
 
-    if (is_virtual_node(nd->nodeid)) {
+    if (is_virtual_node(rd_node->nodeid)) {
       continue;
     }
 
-    DBG_PRINTF("Sending SUI ID to node id: %d\n", nd->nodeid);
+    DBG_PRINTF("Sending SUI ID to node id: %d\n", rd_node->nodeid);
     /* To cover the case of missing callback from either of following calls
      * sl_zw_send_SUCID() or sl_zw_assign_SUC_route()
      */
@@ -1375,15 +1375,15 @@ void send_suc_id(uint8_t status)
                                  0,
                                  1,
                                  0);
-    if (isNodeController(nd->nodeid)) {
+    if (isNodeController(rd_node->nodeid)) {
       uint8_t txOption = TRANSMIT_OPTION_ACK | TRANSMIT_OPTION_AUTO_ROUTE;
-      if (!sl_zw_send_SUCID(nd->nodeid, txOption, send_suc_id_cb)) {
+      if (!sl_zw_send_SUCID(rd_node->nodeid, txOption, send_suc_id_cb)) {
         ERR_PRINTF("Call to sl_zw_send_SUCID failed\n");
         send_suc_id_cb(TRANSMIT_COMPLETE_FAIL, 0);
       }
       goto exit;
     } else {
-      sl_zw_assign_SUC_route(nd->nodeid, send_suc_id_slave_cb);
+      sl_zw_assign_SUC_route(rd_node->nodeid, send_suc_id_slave_cb);
       goto exit;
     }
   }
@@ -1394,7 +1394,7 @@ void send_suc_id(uint8_t status)
 void rd_probe_resume()
 {
   nodeid_t i;
-  rd_node_database_entry_t *nd;
+  rd_node_database_entry_t *rd_node;
 
   if (current_probe_entry) {
     DBG_PRINTF("Resume probe of %u\n", current_probe_entry->nodeid);
@@ -1403,11 +1403,11 @@ void rd_probe_resume()
   }
 
   for (i = 1; i <= ZW_MAX_NODES; i++) {
-    nd = rd_node_get_raw(i);
-    if (nd && (nd->state != STATUS_DONE && nd->state != STATUS_PROBE_FAIL
-               && nd->state != STATUS_FAILING)) {
-      current_probe_entry = nd;
-      rd_node_probe_update(nd);
+    rd_node = rd_node_get_raw(i);
+    if (rd_node && (rd_node->state != STATUS_DONE && rd_node->state != STATUS_PROBE_FAIL
+               && rd_node->state != STATUS_FAILING)) {
+      current_probe_entry = rd_node;
+      rd_node_probe_update(rd_node);
       break;
     }
   }
@@ -1460,10 +1460,10 @@ u8_t rd_probe_in_progress()
 
 u8_t rd_node_in_probe(nodeid_t node)
 {
-  rd_node_database_entry_t *nd;
-  nd = rd_node_get_raw(node);
-  if (nd && (nd->state != STATUS_DONE && nd->state != STATUS_PROBE_FAIL
-             && nd->state != STATUS_FAILING)) {
+  rd_node_database_entry_t *rd_node;
+  rd_node = rd_node_get_raw(node);
+  if (rd_node && (rd_node->state != STATUS_DONE && rd_node->state != STATUS_PROBE_FAIL
+             && rd_node->state != STATUS_FAILING)) {
     return 1;
   }
   return 0;
@@ -2027,12 +2027,12 @@ static void sli_zw_rd_node_in_nvm_validate(nodeid_t i)
   if (i == MyNodeID) {
     return;
   }
-  rd_node_database_entry_t *nd;
+  rd_node_database_entry_t *rd_node;
 
   DBG_PRINTF("Network has node %i\n", i);
-  nd = rd_node_entry_import(i);
+  rd_node = rd_node_entry_import(i);
 
-  if (nd == 0) {
+  if (rd_node == 0) {
     rd_register_new_node(i, 0x00);
     return;
   }
