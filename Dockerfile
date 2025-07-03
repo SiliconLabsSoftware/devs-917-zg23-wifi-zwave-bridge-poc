@@ -45,6 +45,7 @@ RUN apt-get update && \
     python3-pip \
     ninja-build \
     make \
+    wget \
     unzip \
     bzip2 \
     xz-utils \
