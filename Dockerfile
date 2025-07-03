@@ -70,8 +70,8 @@ RUN unzip /tmp/slc_cli_linux.zip -d / && \
 # Install Simplicity Commander
 RUN wget $COMMANDER_URL && \
     unzip SimplicityCommander-Linux.zip && \
-    mkdir commander && \
-    tar -xjf SimplicityCommander-Linux/Commander_linux_x86_64_*.tar.bz commander && \
+    mkdir /commander && \
+    tar -xjf SimplicityCommander-Linux/Commander_linux_x86_64_*.tar.bz /commander && \
     rm -rf SimplicityCommander-Linux.zip && \
     rm -rf SimplicityCommander-Linux/
 
