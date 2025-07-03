@@ -36,6 +36,8 @@ jobs:
             -v ${{ github.workspace }}:/workspace \
             ${{ github.repository }}-build-env:latest \
             /bin/bash -c "
+              cd /simplicity_sdk
+              git apply /workspace/projects/sisdk.patch &&
               cd /workspace/projects && 
               chmod +x script/build script/generate && 
               ./script/build -p brd4342a
