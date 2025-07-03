@@ -1,5 +1,5 @@
 # Wi-Fi/Z-Wave Long Range (LR) bridge gateway
-This project demonstrates a Wi-Fi/Z-Wave Long Range (LR) bridge gateway. The gateway will act as a bridge between Z-Wave devices and Orbit servers, enabling communication and control via a TLS socket connection.
+This project demonstrates a Wi-Fi/Z-Wave Long Range (LR) bridge gateway. The gateway will act as a bridge between Z-Wave devices and TLS servers, enabling communication and control via a TLS socket connection.
 
 ## Hardware requirements
 - BRD4002A Mainboard + BRD4342A Radio Board (SiWx917 Bridge)
