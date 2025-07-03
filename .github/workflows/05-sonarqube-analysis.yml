@@ -14,7 +14,7 @@ on:
         required: true
         default: 'main'
 env:
-  BRANCH_NAME: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.branch || github.ref }}
+  BRANCH_NAME: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.branch || github.head_ref || github.ref_name }}
 jobs:
   sonarqube:
     runs-on: self-hosted
@@ -51,13 +51,13 @@ jobs:
               -Dsonar.ws.timeout=20 \
               -Dproject.settings=/home/${{ github.event.repository.name }}/.github/sonar-project.properties \
               -Dsonar.branch.name=${{ env.BRANCH_NAME }} \
-            | tee /home/${{ github.event.repository.name }}/sonar.log
+            | tee sonar.log
           "
 
-          CE_TASK_ID=$(grep -oP 'id=\K[0-9a-f\-]{36}' /home/${{ github.event.repository.name }}/sonar.log)
+          CE_TASK_ID=$(grep -oP 'id=\K[0-9a-f\-]{36}' /home/${{ github.event.repository.name }}/projects/sonar.log)
           if [ -z "$CE_TASK_ID" ]; then
             echo "Failed to extract ceTaskId from scanner output."
-            cat /home/${{ github.event.repository.name }}/sonar.log
+            cat /home/${{ github.event.repository.name }}/projects/sonar.log
             exit 1
           fi
           echo "Extracted CE_TASK_ID: $CE_TASK_ID exporting as GITHUB_ENV"
