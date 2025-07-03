@@ -36,6 +36,7 @@ jobs:
             -v ${{ github.workspace }}:/workspace \
             ${{ github.repository }}-build-env:latest \
             /bin/bash -c "
+              chmod +x /commander/commander &&
               cd /simplicity_sdk
               git apply /workspace/projects/sisdk.patch &&
               cd /workspace/projects && 

@@ -38,6 +38,7 @@ jobs:
           -v /tmp/sonarcache:/root/.sonar/cache \
           -v $(pwd):/home/${{ github.event.repository.name }}/ \
           -w /home/${{ github.event.repository.name }}/ ${{ github.event.repository.name }}-build-env:latest /bin/sh -c "
+            chmod +x /commander/commander &&
             mkdir -p sonar-bw &&
             cd /simplicity_sdk
             git apply /home/${{ github.event.repository.name }}/projects/sisdk.patch

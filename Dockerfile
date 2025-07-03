@@ -72,7 +72,6 @@ ADD $COMMANDER_URL /tmp/SimplicityCommander-Linux.zip
 RUN unzip /tmp/SimplicityCommander-Linux.zip -d /tmp && \
     mkdir -p commander && \
     tar -xjf /tmp/SimplicityCommander-Linux/Commander_linux_x86_64_*.tar.bz -C /commander && \
-    ln -s /commander/commander /usr/local/bin/commander \
     rm -rf /tmp/SimplicityCommander-Linux.zip && \
     rm -rf /tmp/SimplicityCommander-Linux/
 
