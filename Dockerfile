@@ -64,9 +64,10 @@ RUN git clone $WISCONNECT_REPO && \
     git checkout $WISCONNECT_VER
 
 #Install SLC CLI
-ADD $SLC_CLI_URL /tmp/slc_cli_linux.zip
-RUN unzip /tmp/slc_cli_linux.zip -d / && \
-    rm /tmp/slc_cli_linux.zip
+RUN wget $SLC_CLI_URL && \
+    unzip slc_cli_linux.zip && \
+    rm slc_cli_linux.zip
+
 
 # Install Simplicity Commander
 RUN wget $COMMANDER_URL && \
@@ -77,10 +78,10 @@ RUN wget $COMMANDER_URL && \
     rm -rf SimplicityCommander-Linux/
 
 # Install GCC
-ADD $GCC_URL /tmp/gcc-arm.tar.xz
-RUN mkdir -p /opt/gcc-arm && \
-    tar -xf /tmp/gcc-arm.tar.xz -C /opt/gcc-arm --strip-components=1 && \
-    rm /tmp/gcc-arm.tar.xz
+# Install GCC
+RUN wget $GCC_URL && \
+    tar -vxf arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz && \
+    rm -rf arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz
 
 # Create Python symlink instead of alias
 RUN ln -sf /usr/bin/python3.11 /usr/bin/python3
@@ -106,12 +107,10 @@ RUN unzip /tmp/build-wrapper-linux-x86.zip -d /opt \
 
 ENV SIMPLICITY_SDK_DIR=/simplicity_sdk/
 ENV WISECONNECT_SDK_DIR=/wiseconnect
-ENV ARM_GCC_DIR=/opt/gcc-arm
+ENV ARM_GCC_DIR=/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi
 ENV SLC_CLI_DIR=/slc_cli/bin/slc-cli/slc_cli
 ENV POST_BUILD_EXE=/commander/commander
-ENV PATH="/commander/:${PATH}"
+ENV PATH="/commander:${PATH}"
+ENV PATH="/slc_cli:${PATH}"
 ENV PATH="/usr/bin/:${PATH}"
-ENV PATH="${PATH}:/opt/build-wrapper-linux-x86/"
-ENV PATH="${PATH}:/opt/gcc-arm/bin"
-
 WORKDIR /home
