@@ -1460,7 +1460,7 @@ u8_t rd_probe_in_progress()
 
 u8_t rd_node_in_probe(nodeid_t node)
 {
-  rd_node_database_entry_t *rd_node;
+  const rd_node_database_entry_t *rd_node;
   rd_node = rd_node_get_raw(node);
   if (rd_node && (rd_node->state != STATUS_DONE && rd_node->state != STATUS_PROBE_FAIL
              && rd_node->state != STATUS_FAILING)) {
