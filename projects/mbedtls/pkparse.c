@@ -643,7 +643,7 @@ static int pk_parse_key_sec1_der(mbedtls_pk_context *pk,
         return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_PK_KEY_INVALID_FORMAT, ret);
     }
 
-    /* Keep a reference to the position fo the private key. It will be used
+    /* Keep a reference to the position the private key. It will be used
      * later in this function. */
     d = p;
     d_len = len;
