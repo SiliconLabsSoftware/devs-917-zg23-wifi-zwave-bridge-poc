@@ -36,3 +36,5 @@
 #code convention tool gitignore
 code-convention-tool/
 **/venv/
+simplicity_sdk_*/
+wiseconnect3_sdk_*/

@@ -1,4 +1,4 @@
-# Orbit Wi-Fi/Z-Wave Bridge Gateway
+# Devs Wi-Fi/Z-Wave Bridge Gateway
 
 ![Project Type](https://img.shields.io/badge/Type-Firmware-green)
 [![Bluetooth Low Energy](https://img.shields.io/badge/BLE-Bluetooth%20Low%20Energy-blue)](https://www.bluetooth.com/learn-about-bluetooth/tech-overview/)
@@ -18,7 +18,7 @@
 
 ## Overview
 
-- This project demonstrates a Wi-Fi/Z-Wave Long Range (LR) bridge gateway proof of concept (PoC). The gateway will act as a bridge between Z-Wave devices and Orbit servers, enabling communication and control via a TLS socket connection.
+- This project demonstrates a Wi-Fi/Z-Wave Long Range (LR) bridge gateway proof of concept (PoC). The gateway will act as a bridge between Z-Wave devices and TLS servers, enabling communication and control via a TLS socket connection.
 
 ## Key Features
 
@@ -37,7 +37,7 @@ Wi-Fi
 BLE (Bluetooth Low Energy)
 1. Wi-Fi Commissioning: BLE support for Wi-Fi commissioning to a local Access Point (AP).
 2. GATT Connection: Support for standard BLE GATT connections and advertising.
-3. Legacy Product Control: Support for BLE 125kbps Long Range (LR) for controlling Orbit legacy products.
+3. Legacy Product Control: Support for BLE 125kbps Long Range (LR) for controlling TLS legacy products.
 
 ## Prerequisites/Setup Requirements
 
@@ -58,7 +58,9 @@ BLE (Bluetooth Low Energy)
 
 ### Setup Diagram
 
-//TODO
+<p align="center">
+  <img src=resources/readme/diagram-01.png>
+</p>
 
 ## Build Guide
 
