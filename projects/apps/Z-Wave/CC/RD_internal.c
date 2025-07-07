@@ -190,34 +190,34 @@ void rd_node_cc_version_set(rd_node_database_entry_t *n, uint16_t command_class,
 
 rd_node_database_entry_t* rd_node_entry_alloc(nodeid_t nodeid)
 {
-  rd_node_database_entry_t* nd = rd_data_mem_alloc(sizeof(rd_node_database_entry_t));
-  ndb[nodeid - 1] = nd;
-  if (nd != NULL) {
-    memset(nd, 0, sizeof(rd_node_database_entry_t));
-    nd->nodeid = nodeid;
+  rd_node_database_entry_t* rd_node = rd_data_mem_alloc(sizeof(rd_node_database_entry_t));
+  ndb[nodeid - 1] = rd_node;
+  if (rd_node != NULL) {
+    memset(rd_node, 0, sizeof(rd_node_database_entry_t));
+    rd_node->nodeid = nodeid;
 
     /*When node name is 0, then we use the default names*/
-    nd->nodeNameLen = 0;
-    nd->nodename = NULL;
-    nd->dskLen = 0;
-    nd->dsk = NULL;
-    nd->pcvs = NULL;
-    nd->state = STATUS_CREATED;
-    nd->mode = MODE_PROBING;
-    nd->security_flags = 0;
-    nd->wakeUp_interval = DEFAULT_WAKE_UP_INTERVAL;    //Default wakeup interval is 70 minutes
-    nd->node_cc_versions_len = controlled_cc_v_size();
-    nd->node_cc_versions = rd_data_mem_alloc(nd->node_cc_versions_len);
-    rd_node_cc_versions_set_default(nd);
-    nd->node_version_cap_and_zwave_sw = 0x00;
-    nd->probe_flags = RD_NODE_PROBE_NEVER_STARTED;
-    nd->node_is_zws_probed = 0x00;
-    nd->node_properties_flags = 0x0000;
+    rd_node->nodeNameLen = 0;
+    rd_node->nodename = NULL;
+    rd_node->dskLen = 0;
+    rd_node->dsk = NULL;
+    rd_node->pcvs = NULL;
+    rd_node->state = STATUS_CREATED;
+    rd_node->mode = MODE_PROBING;
+    rd_node->security_flags = 0;
+    rd_node->wakeUp_interval = DEFAULT_WAKE_UP_INTERVAL;    //Default wakeup interval is 70 minutes
+    rd_node->node_cc_versions_len = controlled_cc_v_size();
+    rd_node->node_cc_versions = rd_data_mem_alloc(rd_node->node_cc_versions_len);
+    rd_node_cc_versions_set_default(rd_node);
+    rd_node->node_version_cap_and_zwave_sw = 0x00;
+    rd_node->probe_flags = RD_NODE_PROBE_NEVER_STARTED;
+    rd_node->node_is_zws_probed = 0x00;
+    rd_node->node_properties_flags = 0x0000;
 
-    LIST_STRUCT_INIT(nd, endpoints);
+    LIST_STRUCT_INIT(rd_node, endpoints);
   }
 
-  return nd;
+  return rd_node;
 }
 
 rd_node_database_entry_t* rd_node_entry_import(nodeid_t nodeid)
@@ -228,8 +228,8 @@ rd_node_database_entry_t* rd_node_entry_import(nodeid_t nodeid)
 
 void rd_node_entry_free(nodeid_t nodeid)
 {
-  rd_node_database_entry_t* nd = ndb[nodeid - 1];
-  rd_data_store_mem_free(nd);
+  rd_node_database_entry_t* rd_node = ndb[nodeid - 1];
+  rd_data_store_mem_free(rd_node);
   ndb[nodeid - 1] = NULL;
 }
 
@@ -374,14 +374,14 @@ u8_t rd_get_ep_location(rd_ep_database_entry_t* ep, char* buf, u8_t size)
 
 void rd_node_add_dsk(nodeid_t node, uint8_t dsklen, const uint8_t *dsk)
 {
-  rd_node_database_entry_t *nd;
+  rd_node_database_entry_t *rd_node;
 
   if ((dsklen == 0) || (dsk == NULL)) {
     return;
   }
 
-  nd = rd_node_get_raw(node);
-  if (nd) {
+  rd_node = rd_node_get_raw(node);
+  if (rd_node) {
     rd_node_database_entry_t* old_nd = rd_lookup_by_dsk(dsklen, dsk);
     if (old_nd) {
       /* Unlikely, but possible: the same device gets added again. */
@@ -392,31 +392,31 @@ void rd_node_add_dsk(nodeid_t node, uint8_t dsklen, const uint8_t *dsk)
       old_nd->dskLen = 0;
       /* TODO: Should the node id also be set failing here? */
     }
-    if (nd->dskLen != 0) {
+    if (rd_node->dskLen != 0) {
       /* TODO: this is not supposed to happen - replace DSK is not supported */
-      assert(nd->dskLen == 0);
-      if (nd->dsk != NULL) {
+      assert(rd_node->dskLen == 0);
+      if (rd_node->dsk != NULL) {
         LOG_PRINTF("Replacing old dsk\n");
         /* Silently replace, for now */
-        rd_data_mem_free(nd->dsk);
-        nd->dskLen = 0;
+        rd_data_mem_free(rd_node->dsk);
+        rd_node->dskLen = 0;
       }
     }
 
-    nd->dsk = rd_data_mem_alloc(dsklen);
-    if (nd->dsk) {
-      memcpy(nd->dsk, dsk, dsklen);
-      nd->dskLen = dsklen;
+    rd_node->dsk = rd_data_mem_alloc(dsklen);
+    if (rd_node->dsk) {
+      memcpy(rd_node->dsk, dsk, dsklen);
+      rd_node->dskLen = dsklen;
       LOG_PRINTF("Setting dsk 0x%02x%02x%02x%02x... on node %u.\n",
                  dsk[0], dsk[1], dsk[2], dsk[3], node);
 
       /* Insert other fields from pvl. */
     } else {
       /* TODO: should we return an error here. */
-      nd->dskLen = 0;
+      rd_node->dskLen = 0;
     }
   }
-  /* TODO: should we return an error if no nd?. */
+  /* TODO: should we return an error if no rd_node?. */
 }
 
 rd_node_database_entry_t* rd_lookup_by_dsk(uint8_t dsklen, const uint8_t* dsk)

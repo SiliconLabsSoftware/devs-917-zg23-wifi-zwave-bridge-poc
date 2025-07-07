@@ -686,7 +686,7 @@ void sl_udp_command_handler(struct uip_udp_conn *c,
   DBG_PRINTF("\n");
 
   if (pZipPacket->cmdClass == COMMAND_CLASS_ZIP_ND) {
-    WRN_PRINTF("\nZIP ND doesn't support\n");
+    WRN_PRINTF("\nZIP_ND doesn't support\n");
     return;
   }
 

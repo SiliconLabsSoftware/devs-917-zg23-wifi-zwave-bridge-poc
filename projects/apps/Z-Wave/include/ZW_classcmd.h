@@ -1539,7 +1539,7 @@
   ZW_CONTROLLER_CHANGE_STATUS_2BYTE_FRAME                      ZW_ControllerChangeStatus2byteFrame;                         \
   ZW_CONTROLLER_CHANGE_STATUS_3BYTE_FRAME                      ZW_ControllerChangeStatus3byteFrame;                         \
   ZW_CONTROLLER_CHANGE_STATUS_4BYTE_FRAME                      ZW_ControllerChangeStatus4byteFrame;                         \
-/* Command class Zip Nd */                                                                                                  \
+/* Command class Zip-Nd */                                                                                                  \
   ZW_ZIP_NODE_SOLICITATION_FRAME                               ZW_ZipNodeSolicitationFrame;                                 \
   ZW_ZIP_INV_NODE_SOLICITATION_FRAME                           ZW_ZipInvNodeSolicitationFrame;                              \
   ZW_ZIP_NODE_ADVERTISEMENT_FRAME                              ZW_ZipNodeAdvertisementFrame;                                \
@@ -6817,7 +6817,7 @@
 #define CONTROLLER_CHANGE_STATUS_PROPERTIES2_SECURITY_MASK                               0x7F
 #define CONTROLLER_CHANGE_STATUS_PROPERTIES2_OPT_BIT_MASK                                0x80
 
-/* Zip Nd command class commands */
+/* Zip-Nd command class commands */
 #define ZIP_ND_VERSION                                                                   0x02
 #define ZIP_NODE_SOLICITATION                                                            0x03
 #define ZIP_INV_NODE_SOLICITATION                                                        0x04
