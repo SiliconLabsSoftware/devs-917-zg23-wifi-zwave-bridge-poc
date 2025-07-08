@@ -1,0 +1,28 @@
+id: devs_zw_917_lib
+label: si917 Third Party Library
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides third party library for si917 project.
+provides:
+  - name: devs_zw_917_lib
+
+include:
+  - path: .
+    file_list:
+      - path: lib/assert.h
+      - path: lib/crc16.h
+      - path: lib/memb.h
+      - path: lib/rand.h
+      - path: lib/random.h
+      - path: lib/ringbuf.h
+      - path: lib/zw_log.h
+      - path: lib/list.h
+
+source:
+  - path: lib/assert.c
+  - path: lib/crc16.c
+  - path: lib/memb.c
+  - path: lib/random.c
+  - path: lib/ringbuf.c
+  - path: lib/list.c

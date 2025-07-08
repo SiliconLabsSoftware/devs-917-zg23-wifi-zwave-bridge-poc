@@ -1,0 +1,22 @@
+id: devs_zw_917_app_ble_prov
+label: Devs 917 BLE Provision application
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides BLE Provision application for Devs 917 project.
+provides:
+  - name: devs_zw_917_app_ble_prov
+requires:
+  - name: devs_zw_917_app_common
+
+include:
+  - path: apps/ble_prov
+    file_list:
+      - path: sl_nvm3_cfg.h
+      - path: sl_wlan_app.h
+      - path: sl_ble_app.h
+
+source:
+  - path: apps/ble_prov/sl_nvm3_cfg.c
+  - path: apps/ble_prov/sl_wlan_app.c
+  - path: apps/ble_prov/sl_ble_app.c

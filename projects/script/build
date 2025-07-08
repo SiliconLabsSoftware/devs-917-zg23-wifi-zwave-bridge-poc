@@ -1,0 +1,151 @@
+#!/bin/bash
+# build - Script to build the project
+if [[ -n ${BASH_SOURCE[0]} ]]; then
+    script_path="${BASH_SOURCE[0]}"
+else
+    script_path="$0"
+fi
+script_dir="$(realpath "$(dirname "${script_path}")")"
+repo_dir="$(dirname "${script_dir}")"
+
+set -e
+
+echo "Starting build process..."
+
+# ==============================================================================
+# Build functions
+# ==============================================================================
+generate()
+{
+    if [ "${skip_generation}" = true ]; then
+        return
+    fi
+
+    set +x
+    echo "========================================================================================================="
+    echo "Generate devs-917-zg23 project"
+    echo "========================================================================================================="
+    set -x
+    "${repo_dir}/script/generate" \
+        "${repo_dir}/slc/project/devs-917-zg23-WiFi-Zwave-bridge-poc.slcp" \
+        "${slc_generated_projects_dir}/si91x_zg23" \
+        "${board}"
+}
+
+build_si91x_zg23()
+{
+    set +x
+    echo "======================================================================"
+    echo "Building SiWx917-ZG23:"
+    echo "======================================================================"
+    set -x
+    builddir="${slc_generated_projects_dir}/si91x_zg23"
+    cd "${builddir}"
+    # Find lwipopts.h in config directory and copy its content to this file
+    lwipopts_file="${repo_dir}/config/lwipopts.h"
+    if [[ -f "${lwipopts_file}" ]]; then
+        cat "${lwipopts_file}" > "./config/lwipopts.h"
+        echo "Copied content of ${lwipopts_file} to $(pwd)/config/lwipopts.h"
+    else
+        echo "Warning: ${lwipopts_file} not found."
+    fi
+    make -f "devs-917-zg23.Makefile"
+
+    cd "${repo_dir}"
+}
+
+build_si91x()
+{
+    export BUILD_DIR="$repo_dir/build/${board}"
+    slc_generated_projects_dir="${BUILD_DIR}/slc"
+
+    # Generate the platform libs and related libs
+    generate
+
+    # Build target si91x_zg23
+    build_si91x_zg23
+
+    find "${slc_generated_projects_dir}/"*/build/debug/ -type f \( -name "*.rps" -o -name "*.s37" \) -ls
+}
+
+main()
+{
+    local usage="usage: $0 [-h] [-p|--pristine] <brdXXXXy> [--skip-generation]"
+
+    skip_generation=false
+    pristine_build=false
+     # Parse command-line arguments
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            -h|--help)
+                echo "$usage"
+                exit 0
+                ;;
+            -p|--pristine)
+                pristine_build=true
+                echo "Pristine build"
+                # Remove the build directory if pristine build is requested
+                if [[ -d "$repo_dir/build" ]]; then
+                    echo "Removing existing build directory: $repo_dir/build"
+                    rm -rf "$repo_dir/build"
+                fi
+                shift
+                ;;
+            --skip-generation)
+                skip_generation=true
+                shift
+                ;;
+            *)
+            # Assume the first positional argument is the board identifier
+            if [[ -z "${board-}" ]]; then
+                board="$1"
+            fi
+            shift
+            ;;
+        esac
+    done
+
+    if [ -z "$SIMPLICITY_SDK_DIR" ]; then
+        echo "SIMPLICITY_SDK_DIR is not set."
+        exit 1
+    fi
+
+    if [ -z "$WISECONNECT_SDK_DIR" ]; then
+        echo "WISECONNECT_SDK_DIR is not set."
+        exit 1
+    fi
+
+    if [ -z "$ARM_GCC_DIR" ]; then
+        echo "ARM_GCC_DIR is not set."
+        exit 1
+    fi
+
+    if [ -z "$SLC_CLI_DIR" ]; then
+        echo "SLC_CLI_DIR is not set."
+        exit 1
+    fi
+
+    if [ -z "$POST_BUILD_EXE" ]; then
+        echo "POST_BUILD_EXE is not set."
+        exit 1
+    fi
+
+    if [[ -z "$board" ]]; then
+        echo "Error: Board is required."
+        echo "$usage"
+        exit 1
+    fi
+    echo "Building for board: $board"
+
+    build_si91x
+}
+
+cleanup()
+{
+    # Placeholder for any cleanup tasks
+    :
+}
+
+trap cleanup EXIT
+
+main "$@"

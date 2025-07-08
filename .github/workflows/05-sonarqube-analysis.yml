@@ -1,0 +1,99 @@
+name: 05-SonarQube-Analysis
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+      - develop
+      - "release/**"
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branches to run the workflow on'
+        required: true
+        default: 'main'
+env:
+  BRANCH_NAME: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.branch || github.head_ref || github.ref_name }}
+jobs:
+  sonarqube:
+    runs-on: self-hosted
+    env:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCH_NAME }}
+          submodules: true
+          fetch-depth: 0
+
+      - name: Build Docker Image
+        run: docker build -t ${{ github.event.repository.name }}-build-env:latest .
+
+      - name: Run SonarQube analysis
+        run: |
+          docker run -u root --rm \
+          -v /tmp/sonarcache:/root/.sonar/cache \
+          -v $(pwd):/home/${{ github.event.repository.name }}/ \
+          -w /home/${{ github.event.repository.name }}/ ${{ github.event.repository.name }}-build-env:latest /bin/sh -c "
+            chmod +x /commander/commander &&
+            mkdir -p sonar-bw &&
+            cd /simplicity_sdk
+            git apply /home/${{ github.event.repository.name }}/projects/sisdk.patch
+            cd /home/${{ github.event.repository.name }}/projects &&
+            chmod +x script/build script/generate && 
+            /opt/build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir sonar-bw ./script/build -p brd4342a &&
+            sonar-scanner \
+              -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
+              -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+              -Dsonar.ws.timeout=20 \
+              -Dproject.settings=/home/${{ github.event.repository.name }}/.github/sonar-project.properties \
+              -Dsonar.branch.name=${{ env.BRANCH_NAME }} \
+            | tee /home/${{ github.event.repository.name }}/sonar.log
+          "
+
+          CE_TASK_ID=$(grep -oP 'id=\K[0-9a-f\-]{36}' sonar.log)
+          if [ -z "$CE_TASK_ID" ]; then
+            echo "Failed to extract ceTaskId from scanner output."
+            cat sonar.log
+            exit 1
+          fi
+          echo "Extracted CE_TASK_ID: $CE_TASK_ID exporting as GITHUB_ENV"
+          echo "CE_TASK_ID=$CE_TASK_ID" >> $GITHUB_ENV
+      - name: Evaluate SonarQube Quality Gate
+        run: |
+          echo "Waiting for SonarQube analysis task ($CE_TASK_ID) to complete..."
+          STATUS=""
+            for i in $(seq 1 10); do
+            sleep 10
+            STATUS_JSON=$(curl -s -u ${{ secrets.SONAR_TOKEN }}: "${{ secrets.SONAR_HOST_URL }}/api/ce/task?id=$CE_TASK_ID")
+            echo "STATUS_JSON: $STATUS_JSON"
+            STATUS=$(echo "$STATUS_JSON" | jq -r '.task.status')
+            if [ "$STATUS" == "SUCCESS" ]; then
+              break
+            elif [ "$STATUS" == "FAILED" ]; then
+              echo "SonarQube task failed."
+              exit 1
+            fi
+          done
+
+          ANALYSIS_ID=$(echo $STATUS_JSON | jq -r '.task.analysisId')
+          if [ "$STATUS" != "SUCCESS" ]; then
+            echo "SonarQube analysis did not complete successfully in time."
+            exit 1
+          fi
+
+          QG_STATUS_JSON=$(curl -s -u ${{ secrets.SONAR_TOKEN }}: "${{ secrets.SONAR_HOST_URL }}/api/qualitygates/project_status?analysisId=$ANALYSIS_ID")
+          QG_STATUS=$(echo $QG_STATUS_JSON | jq -r '.projectStatus.status')
+          echo "Quality Gate Status: $QG_STATUS"
+
+          if [ "$QG_STATUS" != "OK" ]; then
+            echo "Quality Gate failed: $QG_STATUS"
+            exit 1
+          fi
+
+      - name: Clean up workspace
+        if: always()
+        run: sudo git clean -ffdx
