@@ -3,7 +3,6 @@ FROM ubuntu:22.04
 # Set the timezone to Vietnam/Ho_Chi_Minh
 ENV TZ=Asia/Ho_Chi_Minh
 ARG ARCH=x86_64
-ARG SONARQUBE=true
 # Install packages
 
 RUN apt-get update && \
@@ -67,22 +66,6 @@ RUN wget $GCC_URL && \
 # alias python
 # Create Python symlink instead of alias
 RUN ln -sf /usr/bin/python3.11 /usr/bin/python3
-
-# Download and install SONARQUBE scanner
-RUN if [ "$SONARQUBE" = "true" ]; then \
-    curl -L -o /tmp/sonar-scanner-cli.zip -k https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-linux-x64.zip \
-    && unzip /tmp/sonar-scanner-cli.zip -d /opt \
-    && ln -s /opt/sonar-scanner-6.1.0.4477-linux-x64/bin/sonar-scanner /usr/local/bin/sonar-scanner \
-    && rm /tmp/sonar-scanner-cli.zip; \
-    fi
-
-# Download and install build-wrapper
-RUN if [ "$SONARQUBE" = "true" ]; then \
-    curl -L -o /tmp/build-wrapper-linux-x86.zip -k https://sonarqube.silabs.net/static/cpp/build-wrapper-linux-x86.zip \
-    && unzip /tmp/build-wrapper-linux-x86.zip -d /opt \
-    && ln -s /opt/build-wrapper-linux-x86/build-wrapper-linux-x86-64 /usr/local/bin/build-wrapper \
-    && rm /tmp/build-wrapper-linux-x86.zip; \
-    fi
 
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
