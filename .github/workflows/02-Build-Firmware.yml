@@ -17,9 +17,7 @@ on:
 
 jobs:
   FW_build:
-    # Choose a runner type here by commenting out the not needed one.
-    # runs-on: ubuntu-22.04
-    runs-on: self-hosted
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

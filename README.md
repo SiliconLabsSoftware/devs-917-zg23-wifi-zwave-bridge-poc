@@ -106,10 +106,3 @@ Please follow the [CONTRIBUTING](./.github/CONTRIBUTING.md) guidelines.
 ## License
 
 See the [LICENSE.md](./LICENSE.md) file for details.
-
----
-
-## Secrets
-
-The following secrets are required for this project:
-- `SONAR_TOKEN`: Token to access SonarQube servers
