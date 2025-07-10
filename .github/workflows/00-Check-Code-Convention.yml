@@ -57,13 +57,25 @@ jobs:
           sudo cp ./.github/coding-convention-tool/tools/uncrustify/uncrustify.cfg ./uncrustify/uncrustify.cfg
           echo "Install clang-tidy"
           sudo apt-get install clang-tidy
+    - name: Modify pre-commit config to exclude folders
+      run: |
+        echo "Installing yq for YAML processing..."
+        sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+        sudo chmod +x /usr/local/bin/yq
+        echo "Modifying .pre-commit-config.yaml to exclude specific folders..."
+        config_file=".github/coding-convention-tool/.pre-commit-config.yaml"
+        new_patterns="projects/mbedtls/.*|projects/tools/.*|projects/resources/.*"
+        current_exclude=$(yq '.exclude' "$config_file")
+        updated_exclude="${current_exclude}|${new_patterns}"
+        yq -i ".exclude = \"$updated_exclude\"" "$config_file"
+        echo "Successfully updated .pre-commit-config.yaml with exclude patterns"
+        echo "New exclude pattern: $updated_exclude"
     - name: Run test
       run: |
         pre-commit install --config .github/coding-convention-tool/.pre-commit-config.yaml
         pre-commit run --config .github/coding-convention-tool/.pre-commit-config.yaml --all-files 2>&1 | tee CodingConventionTool.txt
         git diff > code-fix.patch || echo "No changes to patch."
         ls -lah code-fix.patch
-
     - name: Upload Result
       uses: actions/upload-artifact@v4.3.4
       with:
