@@ -18,14 +18,14 @@
 #include "zgw_crc.h"
 #include "mbedtls/md5.h"
 
-void calc_md5(uint8_t *addr, uint32_t len, uint8_t out_md5[16]) 
+void calc_md5(uint8_t *addr, uint32_t len, uint8_t out_md5[16])
 {
-    mbedtls_md5_context ctx;
-    mbedtls_md5_init(&ctx);
-    mbedtls_md5_starts(&ctx);
-    mbedtls_md5_update(&ctx, addr, len);
-    mbedtls_md5_finish(&ctx, out_md5);
-    mbedtls_md5_free(&ctx);
+  mbedtls_md5_context ctx;
+  mbedtls_md5_init(&ctx);
+  mbedtls_md5_starts(&ctx);
+  mbedtls_md5_update(&ctx, addr, len);
+  mbedtls_md5_finish(&ctx, out_md5);
+  mbedtls_md5_free(&ctx);
 }
 /*
  * CRC-16 verification
@@ -59,19 +59,19 @@ uint16_t chksum(uint16_t sum, const uint8_t *data, uint16_t len)
   dataptr = data;
   last_byte = data + len - 1;
 
-  while(dataptr < last_byte) {   /* At least two more bytes */
+  while (dataptr < last_byte) {   /* At least two more bytes */
     t = (dataptr[0] << 8) + dataptr[1];
     sum += t;
-    if(sum < t) {
+    if (sum < t) {
       sum++;      /* carry */
     }
     dataptr += 2;
   }
 
-  if(dataptr == last_byte) {
+  if (dataptr == last_byte) {
     t = (dataptr[0] << 8) + 0;
     sum += t;
-    if(sum < t) {
+    if (sum < t) {
       sum++;      /* carry */
     }
   }

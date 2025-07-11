@@ -1405,7 +1405,7 @@ void rd_probe_resume()
   for (i = 1; i <= ZW_MAX_NODES; i++) {
     rd_node = rd_node_get_raw(i);
     if (rd_node && (rd_node->state != STATUS_DONE && rd_node->state != STATUS_PROBE_FAIL
-               && rd_node->state != STATUS_FAILING)) {
+                    && rd_node->state != STATUS_FAILING)) {
       current_probe_entry = rd_node;
       rd_node_probe_update(rd_node);
       break;
@@ -1463,7 +1463,7 @@ u8_t rd_node_in_probe(nodeid_t node)
   const rd_node_database_entry_t *rd_node;
   rd_node = rd_node_get_raw(node);
   if (rd_node && (rd_node->state != STATUS_DONE && rd_node->state != STATUS_PROBE_FAIL
-             && rd_node->state != STATUS_FAILING)) {
+                  && rd_node->state != STATUS_FAILING)) {
     return 1;
   }
   return 0;
