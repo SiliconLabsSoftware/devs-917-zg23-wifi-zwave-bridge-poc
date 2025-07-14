@@ -64,7 +64,7 @@ jobs:
         sudo chmod +x /usr/local/bin/yq
         echo "Modifying .pre-commit-config.yaml to exclude specific folders..."
         config_file=".github/coding-convention-tool/.pre-commit-config.yaml"
-        new_patterns="projects/mbedtls/.*|projects/tools/.*|projects/resources/.*"
+        new_patterns=".*/mbedtls/.*|.*\.patch$|\.cproject$|\.project$|\.github/.*|.*/tools/.*|.*/resources/.*|\.gitignore$|CLA\.md$|Dockerfile$|projects/\.pre-commit-config\.yaml$\|.*\.yml"
         current_exclude=$(yq '.exclude' "$config_file")
         updated_exclude="${current_exclude}|${new_patterns}"
         yq -i ".exclude = \"$updated_exclude\"" "$config_file"
