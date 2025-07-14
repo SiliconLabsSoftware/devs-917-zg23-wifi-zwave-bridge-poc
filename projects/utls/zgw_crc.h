@@ -33,6 +33,6 @@
 
 uint16_t zgw_crc16(uint16_t crc16, uint8_t *data, unsigned long data_len);
 
-void calc_md5(uint8_t *addr, uint32_t len, uint8_t out_md5[16]) ;
+void calc_md5(uint8_t *addr, uint32_t len, uint8_t out_md5[16]);
 
 #endif

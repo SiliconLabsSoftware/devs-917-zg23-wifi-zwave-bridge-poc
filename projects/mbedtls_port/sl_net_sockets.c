@@ -298,7 +298,7 @@ int mbedtls_net_set_block(mbedtls_net_context *ctx)
 {
   (void) ctx;
   /* LwIP doesn't currently support it  */
-  return( 1 );
+  return(1);
 }
 
 int mbedtls_net_set_nonblock(mbedtls_net_context *ctx)
