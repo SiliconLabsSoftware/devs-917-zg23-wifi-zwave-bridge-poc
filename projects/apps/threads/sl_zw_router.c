@@ -146,7 +146,6 @@ void sl_application_cmd_zip_handler(ts_param_t *p,
     default:
       break;
   } // end case
-  // If we got here, the frame has been transport layer unwrapped...
   sl_zw_send_data_appl_rx_notify(p, (const uint8_t *) pCmd, cmdLength);
   // process data from request command.
   if (sl_send_request_appl_cmd_handler(p, pCmd, cmdLength)) {

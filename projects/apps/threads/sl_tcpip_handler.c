@@ -206,8 +206,8 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
   /* Handle stack overflow here (e.g., log, halt, reset) */
   LOG_PRINTF("Stack overflow in task: %s\n", pcTaskName);
   taskDISABLE_INTERRUPTS();
-  for (;;) {
-    ;        // Halt
+  while (1) {
+    // halt.
   }
 }
 
