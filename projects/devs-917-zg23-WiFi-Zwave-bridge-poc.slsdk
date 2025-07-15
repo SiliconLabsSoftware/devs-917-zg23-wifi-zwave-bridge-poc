@@ -1,0 +1,9 @@
+# Properties file for Simplicity Studio metadata
+id=com.silabs.sdk.wifi_zwave_917
+
+version=0.0.1
+
+label=Silicon Labs wifi_zwave_917
+description=wifi_zwave_917 extension for Simplicity SDK Suite
+
+prop.subLabel=Silicon Labs wifi_zwave_917\\ 0.0.1-1.0

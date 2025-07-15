@@ -1,0 +1,22 @@
+id: devs_zw_917_app_serial
+label: si917 serial application
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides serial application API for si917 project.
+provides:
+  - name: devs_zw_917_app_serial
+requires:
+  - name: devs_zw_917_app_common
+
+include:
+  - path: apps/SerialAPI
+    file_list:
+      - path: Serialapi.h
+      - path: sl_serial.h
+      - path: sl_uart_drv.h
+
+source:
+  - path: apps/SerialAPI/Serialapi.c
+  - path: apps/SerialAPI/sl_serial.c
+  - path: apps/SerialAPI/sl_uart_drv.c
