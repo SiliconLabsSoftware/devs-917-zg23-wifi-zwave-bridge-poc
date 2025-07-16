@@ -1,7 +1,5 @@
 FROM ubuntu:22.04
 
-# Set the timezone to Vietnam/Ho_Chi_Minh
-ENV TZ=Asia/Ho_Chi_Minh
 ARG ARCH=x86_64
 # Install packages
 
