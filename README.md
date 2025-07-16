@@ -23,7 +23,7 @@ Connect UART_TX, UART_RX, and GND from the Expansion Header on the Z-Wave NCP Co
 
 2. **Apply Patch to Simplicity SDK**
    This project requires a patch to enable lwIP packet info functionality, which is not available in the standard SDK distribution.
-   
+
    Navigate to the Simplicity SDK folder and apply the `sisdk.patch` file from the project directory:
 
    ```sh
@@ -70,7 +70,7 @@ Connect UART_TX, UART_RX, and GND from the Expansion Header on the Z-Wave NCP Co
 
 3. **Apply Patch to Simplicity SDK**
    This project requires a patch to enable lwIP packet info functionality, which is not available in the standard SDK distribution.
-   
+
    Navigate to the Simplicity SDK folder and apply the `sisdk.patch` file from the project directory:
 
    ```sh
