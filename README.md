@@ -1,5 +1,6 @@
-# Wi-Fi/Z-Wave Long Range (LR) bridge gateway
-This project demonstrates a Wi-Fi/Z-Wave Long Range (LR) bridge gateway. The gateway will act as a bridge between Z-Wave devices and TLS servers, enabling communication and control via a TLS socket connection.
+# Wi-Fi/Z-Wave Long Range (LR) Bridge Gateway
+
+This project demonstrates a Wi-Fi/Z-Wave Long Range (LR) bridge gateway. The gateway acts as a bridge between Z-Wave devices and TLS servers, enabling communication and control via a TLS socket connection.
 
 ## Hardware requirements
 - BRD4002A Mainboard + BRD4342A Radio Board (SiWx917 Bridge)
@@ -21,6 +22,8 @@ Connect UART_TX, UART_RX, and GND from the Expansion Header on the Z-Wave NCP Co
    - [Simplicity SDK v2025.6.0](https://github.com/SiliconLabs/simplicity_sdk/releases/tag/v2025.6.0)
 
 2. **Apply Patch to Simplicity SDK**
+   This project requires a patch to enable lwIP packet info functionality, which is not available in the standard SDK distribution.
+   
    Navigate to the Simplicity SDK folder and apply the `sisdk.patch` file from the project directory:
 
    ```sh
@@ -65,7 +68,9 @@ Connect UART_TX, UART_RX, and GND from the Expansion Header on the Z-Wave NCP Co
    - [SLC CLI](https://www.silabs.com/documents/login/software/slc_cli_linux.zip)
    - [Simplicity Commander](https://www.silabs.com/documents/login/software/SimplicityCommander-Linux.zip)
 
-3. **Apply Patch to Simplicity SDK**  
+3. **Apply Patch to Simplicity SDK**
+   This project requires a patch to enable lwIP packet info functionality, which is not available in the standard SDK distribution.
+   
    Navigate to the Simplicity SDK folder and apply the `sisdk.patch` file from the project directory:
 
    ```sh
@@ -90,7 +95,7 @@ Connect UART_TX, UART_RX, and GND from the Expansion Header on the Z-Wave NCP Co
    ./projects/script/build b4342a -p
    ```
 
-   The output will be located in `build/b4342a/slc/si91x_zg23/build/debug/`.
+   The build output will be located in `build/b4342a/slc/si91x_zg23/build/debug/`.
 
 ---
 
