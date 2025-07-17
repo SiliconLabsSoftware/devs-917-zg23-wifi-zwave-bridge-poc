@@ -1,0 +1,31 @@
+id: devs_zw_917_app_common
+label: Si917 common application
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides common application API for Si917 project.
+provides:
+  - name: devs_zw_917_app_common
+requires:
+  - name: devs_zw_917_lib
+  - name: devs_zw_917_utils
+include:
+  - path: apps/Common
+    file_list:
+      - path: sl_gw_info.h
+      - path: sl_common_log.h
+      - path: sl_tcpip_def.h
+      - path: cc.h
+      - path: sl_common_type.h
+      - path: sl_rd_types.h
+      - path: sl_router_events.h
+      - path: sl_common_config.h
+      - path: sl_uip_def.h
+
+source:
+  - path: apps/Common/sl_common_log.c
+  - path: apps/Common/sl_gw_info.c
+
+define:
+  - name: UIP_CONF_IPV6
+    value: 1

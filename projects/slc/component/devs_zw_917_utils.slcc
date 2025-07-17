@@ -1,0 +1,29 @@
+id: devs_zw_917_utils
+label: si917 Utilities
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides utilities for si917 project.
+provides:
+  - name: devs_zw_917_utils
+
+include:
+  - path: utls
+    file_list:
+      - path: ipv6_utils.h
+      - path: RF_Region_Set_Validator.h
+      - path: sl_ipnode_utils.h
+      - path: sl_node_sec_flags.h
+      - path: sl_search.h
+      - path: sl_zw_validator.h
+      - path: zgw_crc.h
+      - path: zgw_nodemask.h
+
+source:
+  - path: utls/ipv6_utils.c
+  - path: utls/RF_Region_Set_Validator.c
+  - path: utls/sl_ipnode_util.c
+  - path: utls/sl_search.c
+  - path: utls/sl_zw_validator.c
+  - path: utls/zgw_crc.c
+  - path: utls/zgw_nodemask.c

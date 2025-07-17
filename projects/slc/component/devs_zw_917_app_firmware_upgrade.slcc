@@ -1,0 +1,18 @@
+id: devs_zw_917_app_fwup
+label: Si917 firmware upgradation application
+package: Z-Wave
+category: Z-Wave
+quality: experimental
+description: This component provides firmware upgradation application for Si917 project.
+provides:
+  - name: devs_zw_917_app_fwup
+requires:
+  - name: devs_zw_917_app_common
+
+include:
+  - path: apps/firmware_upgrade
+    file_list:
+      - path: firmware_upgradation.h
+
+source:
+  - path: apps/firmware_upgrade/firmware_upgradation.c
