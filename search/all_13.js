@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['queuehandle_0',['queueHandle',['../struct__ZW__MAILBOX__QUEUE__1BYTE__FRAME__.html#a6a128fc8ebcd2925a236dfd7cd21a989',1,'_ZW_MAILBOX_QUEUE_1BYTE_FRAME_::queueHandle'],['../struct__ZW__MAILBOX__QUEUE__2BYTE__FRAME__.html#a053c63b0845adbbedb6bb3b2015f944e',1,'_ZW_MAILBOX_QUEUE_2BYTE_FRAME_::queueHandle'],['../struct__ZW__MAILBOX__QUEUE__3BYTE__FRAME__.html#ad685cb1c295552ecded79bcba47c12ee',1,'_ZW_MAILBOX_QUEUE_3BYTE_FRAME_::queueHandle'],['../struct__ZW__MAILBOX__QUEUE__4BYTE__FRAME__.html#a98301cd44769f6455da82933b4295138',1,'_ZW_MAILBOX_QUEUE_4BYTE_FRAME_::queueHandle'],['../struct__ZW__MAILBOX__WAKEUP__NOTIFICATION__FRAME__.html#ac7f52fee3c77f600f3839a1265458310',1,'_ZW_MAILBOX_WAKEUP_NOTIFICATION_FRAME_::queueHandle'],['../struct__ZW__MAILBOX__QUEUE__FLUSH__FRAME__.html#a131bef55a7ea3262f8641764e13995cb',1,'_ZW_MAILBOX_QUEUE_FLUSH_FRAME_::queueHandle']]]
+];
