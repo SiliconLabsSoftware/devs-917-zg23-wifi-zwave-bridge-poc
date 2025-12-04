@@ -347,7 +347,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sub-state flag for the Network Management State machine.</p>
-<p>The ZW_LEARN_MODE_RETURN_INTERVIEW_STATUS was set on the <a class="el" href="ZW__classcmd_8h.html#a419f99d1ca71dd2fd8d5d313a658f324">LEARN_MODE_SET</a> command, i.e., <a class="el" href="ZW__controller__api_8h.html#a4d5b519efa8a6f4d2861e84b9423e34c">LEARN_MODE_INTERVIEW_COMPLETED</a> is requested.</p>
+<p>The ZW_LEARN_MODE_RETURN_INTERVIEW_STATUS was set on the #LEARN_MODE_SET command, i.e., <a class="el" href="ZW__controller__api_8h.html#a4d5b519efa8a6f4d2861e84b9423e34c">LEARN_MODE_INTERVIEW_COMPLETED</a> is requested.</p>
 <dl class="section see"><dt>See also</dt><dd>Learn Mode Set Command (Network Management Basic Node Command Class, version 2 and up) </dd></dl>
 
 </div>
@@ -364,7 +364,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sub-state flag for the Network Management State machine.</p>
-<p>The ZW_SET_LEARN_MODE_NWE was set on the <a class="el" href="ZW__classcmd_8h.html#a419f99d1ca71dd2fd8d5d313a658f324">LEARN_MODE_SET</a> command.</p>
+<p>The ZW_SET_LEARN_MODE_NWE was set on the #LEARN_MODE_SET command.</p>
 <dl class="section see"><dt>See also</dt><dd>Learn Mode Set Command (Network Management Basic Node Command Class). </dd></dl>
 
 </div>
@@ -381,7 +381,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sub-state flag for the Network Management State machine.</p>
-<p>The ZW_SET_LEARN_MODE_NWI was set on the <a class="el" href="ZW__classcmd_8h.html#a419f99d1ca71dd2fd8d5d313a658f324">LEARN_MODE_SET</a> command.</p>
+<p>The ZW_SET_LEARN_MODE_NWI was set on the #LEARN_MODE_SET command.</p>
 <dl class="section see"><dt>See also</dt><dd>Learn Mode Set Command (Network Management Basic Node Command Class). </dd></dl>
 
 </div>
@@ -538,10 +538,10 @@ Variables</h2></td></tr>
 <p>On <a class="el" href="#ggad13aadb189cec7c76947756a5a8809d3a67fd956fd2553f750ba958cb47ed98f2">NM_EV_ADD_PROTOCOL_DONE</a>, send an ADD_NODE_STOP to protocol. On <a class="el" href="#ggad13aadb189cec7c76947756a5a8809d3a27943e2c3c34c65e7f68fd5b471d9261">NM_EV_ADD_NODE_STATUS_DONE</a>, register the new node in <a class="el" href="group__node__db.html">Resource Directory Node Database</a> and go to <a class="el" href="#gga62f2a7abb69b8c8eeae36f72e3a18bdaa0abe30ea2570997398942569bc19d26d">NM_WAIT_FOR_SECURE_ADD</a>. If GW is handling inclusion, start security processing the new node (S2 or S0 inclusion). Otherwise, start a 2 s timer and go to <a class="el" href="#gga62f2a7abb69b8c8eeae36f72e3a18bdaa91146715852fd90fb78895f4e953add1">NM_PREPARE_SUC_INCLISION</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga62f2a7abb69b8c8eeae36f72e3a18bdaade29b05dcc2f4168391d4430e843910b" name="gga62f2a7abb69b8c8eeae36f72e3a18bdaade29b05dcc2f4168391d4430e843910b"></a>NM_NETWORK_UPDATE&#160;</td><td class="fielddoc"><p>GW is processing <em class="arg">NETWORK_UPDATE_REQUEST</em>.</p>
-<p>GW is not SUC/SIS and is processing a <a class="el" href="ZW__classcmd_8h.html#a5769c7c723bd5c93e408d5ceaf0f2b32">NETWORK_UPDATE_REQUEST</a>.</p>
+<p>GW is not SUC/SIS and is processing a NETWORK_UPDATE_REQUEST.</p>
 <p>ResetState() from nm_send_reply() will bring NMS back to <a class="el" href="#gga62f2a7abb69b8c8eeae36f72e3a18bdaa6ba40fa12cade5baa49edfc331869a8b">NM_IDLE</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga62f2a7abb69b8c8eeae36f72e3a18bdaa2524c05375990cbbf7814b0b87de62f8" name="gga62f2a7abb69b8c8eeae36f72e3a18bdaa2524c05375990cbbf7814b0b87de62f8"></a>NM_WAITING_FOR_PROBE&#160;</td><td class="fielddoc"><p>Learn mode state. Also used if GW is processing <a class="el" href="ZW__classcmd_8h.html#a4f47822827efbe25b95d3174ae61ef41">NODE_INFO_CACHED_GET</a>, <a class="el" href="ZW__classcmd_8h.html#a5769c7c723bd5c93e408d5ceaf0f2b32">NETWORK_UPDATE_REQUEST</a>, or <a class="el" href="ZW__classcmd_8h.html#afee2cfba297952243cdd87c3b3a997f0">DEFAULT_SET</a>.</p>
+<tr><td class="fieldname"><a id="gga62f2a7abb69b8c8eeae36f72e3a18bdaa2524c05375990cbbf7814b0b87de62f8" name="gga62f2a7abb69b8c8eeae36f72e3a18bdaa2524c05375990cbbf7814b0b87de62f8"></a>NM_WAITING_FOR_PROBE&#160;</td><td class="fielddoc"><p>Learn mode state. Also used if GW is processing NODE_INFO_CACHED_GET, NETWORK_UPDATE_REQUEST, or DEFAULT_SET.</p>
 <p>Waiting on networkUpdateStatusFlags. When all flags are in, ResetState() from nm_send_reply() will bring NMS back to <a class="el" href="#gga62f2a7abb69b8c8eeae36f72e3a18bdaa6ba40fa12cade5baa49edfc331869a8b">NM_IDLE</a>.</p>
 <p>Cannot be interrupted. </p>
 </td></tr>

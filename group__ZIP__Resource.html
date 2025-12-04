@@ -220,7 +220,7 @@ Dead Node Detection</h4>
 <p>Since a wake-up node (<a class="el" href="#ggaeb134dcfdeb1124196a5309eedaf7b3bab78cf5d8e8d1e2f885873a29e0dcb867">MODE_MAILBOX</a>) may be unresponsive even when it is healthy, the Resource Directory only sets it failing if it has not been heard from in 3 times its wake-up interval. The RD does this by periodically checking the mailbox nodes (#rd_check_for_dead_nodes_worker()).</p>
 <dl class="section note"><dt>Note</dt><dd>This implies that a mailbox node with wake-up interval 0 is never set failing.</dd></dl>
 <p>In either case, as soon as the Z/IP Gateway receives a frame from a failing node, it will mark it as not failing (<a class="el" href="#gga6d6bd76097382c3eecdf025aab56fd9ead6bb356eea903fc91c6f40e158b9913e">STATUS_DONE</a>). The received frame could be a command or an ACK.</p>
-<p>This tracking only starts after the initial inteview has been completed successfully. If a new interview is requested (<a class="el" href="ZW__classcmd_8h.html#a4f47822827efbe25b95d3174ae61ef41">NODE_INFO_CACHED_GET</a>), tracking is again suspended until successful completion.</p>
+<p>This tracking only starts after the initial inteview has been completed successfully. If a new interview is requested (#NODE_INFO_CACHED_GET), tracking is again suspended until successful completion.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga1e099562b8c04ad9c6a99e9ae7cdb8ce">rd_set_failing</a>, <a class="el" href="#gad12c84731bb93515de36cb68915a4343">rd_node_is_alive()</a>, <a class="el" href="#gaf31f21c0cd907b00e560423da5c72e74">rd_node_is_unreachable()</a>.</dd></dl>
 <h4 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
 mDNS Support</h4>

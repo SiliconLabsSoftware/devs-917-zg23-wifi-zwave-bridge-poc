@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['firmware_5fupdate_5fnvm_5ft_0',['FIRMWARE_UPDATE_NVM_T',['../ZW__SerialAPI_8h.html#a82b5acd9dfed9c133b3568e766b0ff37',1,'ZW_SerialAPI.h']]]
+  ['handler_5fevents_5ft_0',['handler_events_t',['../CC__InclusionController_8c.html#ab8c2ed21d956b7a6df34a0a9060e4e65',1,'CC_InclusionController.c']]]
 ];
