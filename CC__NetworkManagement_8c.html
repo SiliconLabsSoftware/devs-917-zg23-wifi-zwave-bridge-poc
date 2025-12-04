@@ -76,7 +76,6 @@ $(function() {
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -103,20 +102,15 @@ $(function() {
 <code>#include &quot;<a class="el" href="ZW__controller__api__ex_8h_source.html">ZW_controller_api_ex.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ZW__nodemask__api_8h_source.html">ZW_nodemask_api.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ZW__udp__server_8h_source.html">ZW_udp_server.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="zgw__nodemask_8h_source.html">utls/zgw_nodemask.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sl__node__sec__flags_8h_source.html">utls/sl_node_sec_flags.h</a>&quot;</code><br />
+<code>#include &quot;utls/zgw_nodemask.h&quot;</code><br />
+<code>#include &quot;utls/sl_node_sec_flags.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sl__bridge_8h_source.html">ip_bridge/sl_bridge.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sl__zw__resource_8h_source.html">ip_translate/sl_zw_resource.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sl__security__layer_8h_source.html">threads/sl_security_layer.h</a>&quot;</code><br />
+<code>#include &quot;threads/sl_security_layer.h&quot;</code><br />
 <code>#include &quot;sl_sleeptimer.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="CC__InclusionController_8h_source.html">CC_InclusionController.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CC__NetworkManagement_8h_source.html">CC_NetworkManagement.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:node_5Fadd_5Fsmart_5Fstart_5Fevent_5Fdata" id="r_node_5Fadd_5Fsmart_5Fstart_5Fevent_5Fdata"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__add__smart__start__event__data.html">node_add_smart_start_event_data</a></td></tr>
-<tr class="memitem:NetworkManagementState" id="r_NetworkManagementState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkManagementState.html">NetworkManagementState</a></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ab48de4624c641bb79b08a9c4d3a8ef59" id="r_ab48de4624c641bb79b08a9c4d3a8ef59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab48de4624c641bb79b08a9c4d3a8ef59">REPLACE_FAILED</a></td></tr>
@@ -185,7 +179,7 @@ Variables</h2></td></tr>
 <tr class="memitem:gae11a47e4d2f64db0b7bc20998aad0eaa" id="r_gae11a47e4d2f64db0b7bc20998aad0eaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NW__CMD__handler.html#gae11a47e4d2f64db0b7bc20998aad0eaa">network_management_init_done</a> = 0</td></tr>
 <tr class="memitem:a48db1f75563f248300a8eb5b87b297f5" id="r_a48db1f75563f248300a8eb5b87b297f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48db1f75563f248300a8eb5b87b297f5">delay_neighbor_update</a> = 0</td></tr>
 <tr class="memitem:a4736e9e579923a222dfd09a1f9d4aac6" id="r_a4736e9e579923a222dfd09a1f9d4aac6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4736e9e579923a222dfd09a1f9d4aac6">waiting_for_middleware_probe</a> = <a class="el" href="ZW__typedefs_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
-<tr class="memitem:ae7bfa1a91b7f659c1cba5a3eaa3f5b40" id="r_ae7bfa1a91b7f659c1cba5a3eaa3f5b40"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structNetworkManagementState.html">NetworkManagementState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7bfa1a91b7f659c1cba5a3eaa3f5b40">nms</a> = { 0 }</td></tr>
+<tr class="memitem:ae7bfa1a91b7f659c1cba5a3eaa3f5b40" id="r_ae7bfa1a91b7f659c1cba5a3eaa3f5b40"><td class="memItemLeft" align="right" valign="top">struct NetworkManagementState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7bfa1a91b7f659c1cba5a3eaa3f5b40">nms</a> = { 0 }</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a24f58f390fc97132bedd2d6189e32b0f" name="a24f58f390fc97132bedd2d6189e32b0f"></a>
@@ -615,7 +609,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structNetworkManagementState.html">NetworkManagementState</a> nms = { 0 }</td>
+          <td class="memname">struct NetworkManagementState nms = { 0 }</td>
         </tr>
       </table>
 </div><div class="memdoc">

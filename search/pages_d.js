@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['of_20contents_0',['Table of Contents',['../dir_a9ec1ef424966475f993eb98877e3088.html#autotoc_md103',1,'']]],
-  ['overview_1',['Overview',['../dir_a9ec1ef424966475f993eb98877e3088.html#autotoc_md104',1,'']]]
+  ['range_20lr_20bridge_20gateway_0',['Wi-Fi/Z-Wave Long Range (LR) Bridge Gateway',['../index.html',1,'']]],
+  ['requirements_1',['Hardware requirements',['../index.html#autotoc_md1',1,'']]]
 ];

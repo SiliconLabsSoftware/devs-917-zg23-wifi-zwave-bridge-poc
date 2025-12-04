@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['prerequisites_20setup_20requirements_0',['Prerequisites/Setup Requirements',['../dir_a9ec1ef424966475f993eb98877e3088.html#autotoc_md106',1,'']]],
-  ['procedure_1',['ZIP Router Init Procedure',['../C:/Users/atduy/Desktop/project/orbit/devs-917-zg23-wifi-zwave-bridge-poc/projects/apps/threads/sl_zw_router.c#autotoc_md49',1,'']]],
-  ['proxy_2',['Association Proxy',['../group__ip__emulation.html#asproxy',1,'']]]
+  ['setup_0',['Hardware Setup',['../index.html#autotoc_md2',1,'']]],
+  ['setup_1',['Build environment setup',['../index.html#autotoc_md3',1,'']]],
+  ['side_20effects_3a_2',['Side effects:',['../ZW__transport__api_8h.html#autotoc_md39',1,'']]],
+  ['support_3',['mDNS Support',['../group__ZIP__Resource.html#autotoc_md45',1,'']]],
+  ['support_20for_20z_20wave_20nodes_4',['IP Support for Z-Wave Nodes',['../group__ip__emulation.html#ip_support_for_zwave_nodes',1,'']]]
 ];

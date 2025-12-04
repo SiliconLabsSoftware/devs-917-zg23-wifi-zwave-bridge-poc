@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['uart_20status_20codes_0',['UART Status Codes',['../group__SAUSC.html',1,'']]],
-  ['udp_20process_1',['Z/IP UDP process',['../group__ZIP__Udp.html',1,'']]]
+  ['wave_20address_20translator_0',['IPv4 to Z-Wave address translator',['../group__ip4zwmap.html',1,'']]],
+  ['wave_20basis_20api_1',['Z-Wave Basis API',['../group__BASIS.html',1,'']]],
+  ['wave_20commands_2',['Z-Wave Commands',['../group__ZWCMD.html',1,'']]],
+  ['wave_20common_20api_3',['Z-Wave Common API',['../group__COMMON.html',1,'']]]
 ];

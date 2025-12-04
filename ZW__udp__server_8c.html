@@ -76,7 +76,6 @@ $(function() {
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ZW_udp_server.c File Reference</div></div>
@@ -97,21 +96,15 @@ $(function() {
 <code>#include &lt;<a class="el" href="ZW__classcmd__ex_8h_source.html">ZW_classcmd_ex.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ZW__zip__classcmd_8h_source.html">ZW_zip_classcmd.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="random_8h_source.html">lib/random.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sl__ts__common_8h_source.html">transport/sl_ts_common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sl__zw__send__data_8h_source.html">transport/sl_zw_send_data.h</a>&quot;</code><br />
+<code>#include &quot;transport/sl_ts_common.h&quot;</code><br />
+<code>#include &quot;transport/sl_zw_send_data.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sl__udp__utils_8h_source.html">sl_udp_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ipv6__utils_8h_source.html">utls/ipv6_utils.h</a>&quot;</code><br />
+<code>#include &quot;utls/ipv6_utils.h&quot;</code><br />
 <code>#include &quot;sl_sleeptimer.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:ipv4_5Fpacket_5Fbuffer" id="r_ipv4_5Fpacket_5Fbuffer"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structipv4__packet__buffer.html">ipv4_packet_buffer</a></td></tr>
-<tr class="memitem:udp_5Frx_5Fbk_5Ft" id="r_udp_5Frx_5Fbk_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structudp__rx__bk__t.html">udp_rx_bk_t</a></td></tr>
-<tr class="memitem:udp_5Ftx_5Fsession" id="r_udp_5Ftx_5Fsession"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structudp__tx__session.html">udp_tx_session</a></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a7930a7abf4c4f5ffd67d66839cb68130" id="r_a7930a7abf4c4f5ffd67d66839cb68130"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7930a7abf4c4f5ffd67d66839cb68130">l3_udp_hdr_len</a>&#160;&#160;&#160;(<a class="el" href="sl__ipnode__utils_8h.html#a6f2b90c597ec23f39ec716ccec11233c">UIP_IPUDPH_LEN</a> + uip_ext_len)</td></tr>
+<tr class="memitem:a7930a7abf4c4f5ffd67d66839cb68130" id="r_a7930a7abf4c4f5ffd67d66839cb68130"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7930a7abf4c4f5ffd67d66839cb68130">l3_udp_hdr_len</a>&#160;&#160;&#160;(UIP_IPUDPH_LEN + uip_ext_len)</td></tr>
 <tr class="memitem:ad72dbcf6d0153db1b8d8a58001feed83" id="r_ad72dbcf6d0153db1b8d8a58001feed83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a>&#160;&#160;&#160;DEBUG_PRINT</td></tr>
 <tr class="memitem:af966537cf73ee5973da59bba6b21b731" id="r_af966537cf73ee5973da59bba6b21b731"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af966537cf73ee5973da59bba6b21b731">UIP_IP_BUF</a>&#160;&#160;&#160;((struct uip_ip_hdr *) &amp;uip_buf[UIP_LLH_LEN])</td></tr>
 <tr class="memitem:aaed757731852d359419ae5270a02e7a4" id="r_aaed757731852d359419ae5270a02e7a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaed757731852d359419ae5270a02e7a4">UIP_UDP_BUF</a>&#160;&#160;&#160;((struct uip_udp_hdr *) &amp;uip_buf[uip_l2_l3_hdr_len])</td></tr>
@@ -121,13 +114,13 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4290758372cf0f38bc7858bbccdb0583" id="r_a4290758372cf0f38bc7858bbccdb0583"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4290758372cf0f38bc7858bbccdb0583">sl_application_cmd_ip_handler</a> (<a class="el" href="group__ZIP__Udp.html#gad5b1e3cb5d4f39a12cc8e29ef4a0c9c7">zwave_connection_t</a> *c, void *pData, <a class="el" href="sl__common__type_8h.html#a77570ac4fcab86864fa1916e55676da2">u16_t</a> bDatalen)</td></tr>
-<tr class="memitem:a62a1c2af83e7617197f4cdc0cb63c9ea" id="r_a62a1c2af83e7617197f4cdc0cb63c9ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62a1c2af83e7617197f4cdc0cb63c9ea">MEMB</a> (udp_tx_sessions_memb, struct <a class="el" href="structudp__tx__session.html">udp_tx_session</a>, 4)</td></tr>
+<tr class="memitem:a62a1c2af83e7617197f4cdc0cb63c9ea" id="r_a62a1c2af83e7617197f4cdc0cb63c9ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62a1c2af83e7617197f4cdc0cb63c9ea">MEMB</a> (udp_tx_sessions_memb, struct udp_tx_session, 4)</td></tr>
 <tr class="memitem:a8136d314cc31b279d5c95c23a628415b" id="r_a8136d314cc31b279d5c95c23a628415b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8136d314cc31b279d5c95c23a628415b">LIST</a> (udp_tx_sessions_list)</td></tr>
 <tr class="memitem:gaa1b4ebd958a1fb409cced38dba4907a9" id="r_gaa1b4ebd958a1fb409cced38dba4907a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ZIP__Udp.html#gaa1b4ebd958a1fb409cced38dba4907a9">zwave_connection_compare</a> (<a class="el" href="group__ZIP__Udp.html#gad5b1e3cb5d4f39a12cc8e29ef4a0c9c7">zwave_connection_t</a> *a, <a class="el" href="group__ZIP__Udp.html#gad5b1e3cb5d4f39a12cc8e29ef4a0c9c7">zwave_connection_t</a> *b)</td></tr>
-<tr class="memitem:ga65598d1580de2d9b6b063068b7d7ea09" id="r_ga65598d1580de2d9b6b063068b7d7ea09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sl__ts__param_8h.html#a0415e6b1f090904346aae59864693157">security_scheme_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ZIP__Udp.html#ga65598d1580de2d9b6b063068b7d7ea09">efi_to_shceme</a> (uint8_t ext1, uint8_t ext2)</td></tr>
+<tr class="memitem:ga65598d1580de2d9b6b063068b7d7ea09" id="r_ga65598d1580de2d9b6b063068b7d7ea09"><td class="memItemLeft" align="right" valign="top">security_scheme_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ZIP__Udp.html#ga65598d1580de2d9b6b063068b7d7ea09">efi_to_shceme</a> (uint8_t ext1, uint8_t ext2)</td></tr>
 <tr class="memitem:a18e647e71af2cd36b623508f7f38fbe7" id="r_a18e647e71af2cd36b623508f7f38fbe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18e647e71af2cd36b623508f7f38fbe7">sl_zw_send_data_udp</a> (<a class="el" href="group__ZIP__Udp.html#gad5b1e3cb5d4f39a12cc8e29ef4a0c9c7">zwave_connection_t</a> *c, const <a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *dataptr, <a class="el" href="sl__common__type_8h.html#a77570ac4fcab86864fa1916e55676da2">u16_t</a> datalen, void(*cbFunc)(<a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>, void *), void *user, <a class="el" href="ZW__typedefs_8h.html#ad2f8ed01c1733d4eab0932d970abaa4c">BOOL</a> ackreq)</td></tr>
 <tr class="memitem:gae3b52212a08b577c44861be655b703e8" id="r_gae3b52212a08b577c44861be655b703e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ZIP__Udp.html#gae3b52212a08b577c44861be655b703e8">udp_send_wrap</a> (struct <a class="el" href="structuip__udp__conn.html">uip_udp_conn</a> *c, const void *buf, <a class="el" href="sl__common__type_8h.html#a77570ac4fcab86864fa1916e55676da2">u16_t</a> len, void(*cbFunc)(<a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>, void *), void *user)</td></tr>
-<tr class="memitem:ga3ecc1ee893a94fdf341276b0a786d437" id="r_ga3ecc1ee893a94fdf341276b0a786d437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ZIP__Udp.html#ga3ecc1ee893a94fdf341276b0a786d437">sl_zw_send_zip_data</a> (<a class="el" href="group__ZIP__Udp.html#gad5b1e3cb5d4f39a12cc8e29ef4a0c9c7">zwave_connection_t</a> *c, const void *dataptr, <a class="el" href="sl__common__type_8h.html#a77570ac4fcab86864fa1916e55676da2">u16_t</a> datalen, void(*cbFunc)(<a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>, void *user, <a class="el" href="ZW__transport__api_8h.html#ab4570a0ca8589f9aa6eaea25c042e8ba">TX_STATUS_TYPE</a> *))</td></tr>
+<tr class="memitem:a8ed554f0d1f0a636806516a5209eb174" id="r_a8ed554f0d1f0a636806516a5209eb174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ed554f0d1f0a636806516a5209eb174">sl_zw_send_zip_data</a> (<a class="el" href="group__ZIP__Udp.html#gad5b1e3cb5d4f39a12cc8e29ef4a0c9c7">zwave_connection_t</a> *c, const void *dataptr, <a class="el" href="sl__common__type_8h.html#a77570ac4fcab86864fa1916e55676da2">u16_t</a> datalen, void(*cbFunc)(<a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>, void *user, <a class="el" href="ZW__transport__api_8h.html#ab4570a0ca8589f9aa6eaea25c042e8ba">TX_STATUS_TYPE</a> *))</td></tr>
 <tr class="memitem:gab37a8dd894bf1f78a1bc4135d0821588" id="r_gab37a8dd894bf1f78a1bc4135d0821588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ZIP__Udp.html#gab37a8dd894bf1f78a1bc4135d0821588">sl_zw_send_data_zip_ack</a> (<a class="el" href="group__ZIP__Udp.html#gad5b1e3cb5d4f39a12cc8e29ef4a0c9c7">zwave_connection_t</a> *c, const void *dataptr, <a class="el" href="sl__common__type_8h.html#a4caecabca98b43919dd11be1c0d4cd8e">u8_t</a> datalen, void(*cbFunc)(<a class="el" href="sl__common__type_8h.html#a4caecabca98b43919dd11be1c0d4cd8e">u8_t</a>, void *, <a class="el" href="ZW__transport__api_8h.html#ab4570a0ca8589f9aa6eaea25c042e8ba">TX_STATUS_TYPE</a> *))</td></tr>
 <tr class="memitem:gae4102da2b5922f6e01f02c39656ea556" id="r_gae4102da2b5922f6e01f02c39656ea556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ZIP__Udp.html#gae4102da2b5922f6e01f02c39656ea556">send_udp_ack</a> (<a class="el" href="structzwave__udp__session__t.html">zwave_udp_session_t</a> *s, <a class="el" href="group__ZIP__Udp.html#gac0922b3979f36903d85d1fad08d7ef97">zwave_udp_response_t</a> res)</td></tr>
 <tr class="memitem:ga86a7ec4f269c501ebf0cfe862047cc48" id="r_ga86a7ec4f269c501ebf0cfe862047cc48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ZIP__Udp.html#ga86a7ec4f269c501ebf0cfe862047cc48">sl_udp_command_handler</a> (struct <a class="el" href="structuip__udp__conn.html">uip_udp_conn</a> *c, const <a class="el" href="sl__common__type_8h.html#a4caecabca98b43919dd11be1c0d4cd8e">u8_t</a> *<a class="el" href="Serialapi_8c.html#a43a278d13284fb3412e9eee1db1d967e">data</a>, <a class="el" href="sl__common__type_8h.html#a77570ac4fcab86864fa1916e55676da2">u16_t</a> len, <a class="el" href="sl__common__type_8h.html#a4caecabca98b43919dd11be1c0d4cd8e">u8_t</a> received_secure)</td></tr>
@@ -156,7 +149,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define l3_udp_hdr_len&#160;&#160;&#160;(<a class="el" href="sl__ipnode__utils_8h.html#a6f2b90c597ec23f39ec716ccec11233c">UIP_IPUDPH_LEN</a> + uip_ext_len)</td>
+          <td class="memname">#define l3_udp_hdr_len&#160;&#160;&#160;(UIP_IPUDPH_LEN + uip_ext_len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -251,7 +244,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structudp__tx__session.html">udp_tx_session</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype">struct udp_tx_session</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -286,7 +279,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main application command handler for commands coming both via Z-Wave and IP </p>
 
 </div>
 </div>
@@ -325,6 +317,37 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="ZW__typedefs_8h.html#ad2f8ed01c1733d4eab0932d970abaa4c">BOOL</a></td>          <td class="paramname"><span class="paramname"><em>ackreq</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ed554f0d1f0a636806516a5209eb174" name="a8ed554f0d1f0a636806516a5209eb174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed554f0d1f0a636806516a5209eb174">&#9670;&#160;</a></span>sl_zw_send_zip_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sl_zw_send_zip_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ZIP__Udp.html#gad5b1e3cb5d4f39a12cc8e29ef4a0c9c7">zwave_connection_t</a> *</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>dataptr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sl__common__type_8h.html#a77570ac4fcab86864fa1916e55676da2">u16_t</a></td>          <td class="paramname"><span class="paramname"><em>datalen</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>cbFunc&#160;</em></span>)(<a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>, void *user, <a class="el" href="ZW__transport__api_8h.html#ab4570a0ca8589f9aa6eaea25c042e8ba">TX_STATUS_TYPE</a> *)&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

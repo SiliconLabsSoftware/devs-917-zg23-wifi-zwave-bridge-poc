@@ -76,7 +76,6 @@ $(function() {
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -84,7 +83,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;FreeRTOS.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="sl__board__configuration_8h_source.html">sl_board_configuration.h</a>&quot;</code><br />
+<code>#include &quot;sl_board_configuration.h&quot;</code><br />
 <code>#include &quot;sl_constants.h&quot;</code><br />
 <code>#include &quot;sl_wifi.h&quot;</code><br />
 <code>#include &quot;sl_net_ip_types.h&quot;</code><br />
@@ -96,17 +95,12 @@ $(function() {
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;sl_status.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sl__common__type_8h_source.html">sl_common_type.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ble__config_8h_source.html">ble_config.h</a>&quot;</code><br />
+<code>#include &quot;ble_config.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sl__common__log_8h_source.html">sl_common_log.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sl__nvm3__cfg_8h_source.html">sl_nvm3_cfg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sl__wlan__app_8h_source.html">sl_wlan_app.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sl__ble__app_8h_source.html">sl_ble_app.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:char_5Fgatt_5Ft" id="r_char_5Fgatt_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchar__gatt__t.html">char_gatt_t</a></td></tr>
-<tr class="memitem:sl_5Fble_5Fprofile_5Ft" id="r_sl_5Fble_5Fprofile_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl__ble__profile__t.html">sl_ble_profile_t</a></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:abbc65e75793ee2ebc681aeb48e98cd40" id="r_abbc65e75793ee2ebc681aeb48e98cd40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbc65e75793ee2ebc681aeb48e98cd40">SL_BLE_SERV_CHAR_UUID</a>&#160;&#160;&#160;0x2803</td></tr>
@@ -170,7 +164,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a12d494db695661ecd6ed41d2cb159e60" id="r_a12d494db695661ecd6ed41d2cb159e60"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsl__ble__profile__t.html">sl_ble_profile_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12d494db695661ecd6ed41d2cb159e60">sl_ble_app_profile</a></td></tr>
+<tr class="memitem:a12d494db695661ecd6ed41d2cb159e60" id="r_a12d494db695661ecd6ed41d2cb159e60"><td class="memItemLeft" align="right" valign="top">const sl_ble_profile_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12d494db695661ecd6ed41d2cb159e60">sl_ble_app_profile</a></td></tr>
 <tr class="memitem:a12845e161c81aec462a4601eaa2a3798" id="r_a12845e161c81aec462a4601eaa2a3798"><td class="memItemLeft" align="right" valign="top">const osThreadAttr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12845e161c81aec462a4601eaa2a3798">sl_ble_thread_attributes</a></td></tr>
 <tr class="memitem:aa5bb772bb4fea51a80a29d5f79a6219a" id="r_aa5bb772bb4fea51a80a29d5f79a6219a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsl__ap__t.html">sl_ap_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5bb772bb4fea51a80a29d5f79a6219a">sl_wlan_ap</a></td></tr>
 <tr class="memitem:a058d1e2f7315c2e820d0881b2c8a754a" id="r_a058d1e2f7315c2e820d0881b2c8a754a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsl__ble__event__manage__t.html">sl_ble_event_manage_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a058d1e2f7315c2e820d0881b2c8a754a">sl_ble_event_table</a> []</td></tr>
@@ -996,7 +990,7 @@ description</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structsl__ble__profile__t.html">sl_ble_profile_t</a> sl_ble_app_profile</td>
+          <td class="memname">const sl_ble_profile_t sl_ble_app_profile</td>
         </tr>
       </table>
 </div><div class="memdoc">

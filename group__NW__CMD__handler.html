@@ -72,7 +72,6 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -81,10 +80,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:NetworkManagementState" id="r_NetworkManagementState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkManagementState.html">NetworkManagementState</a></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga846c451de491b271e39b41340197a631" id="r_ga846c451de491b271e39b41340197a631"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga846c451de491b271e39b41340197a631">NMS_FLAG_S2_ADD</a>&#160;&#160;&#160;1</td></tr>
@@ -557,7 +552,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="gga62f2a7abb69b8c8eeae36f72e3a18bdaa90039e85e13ed1d6e1387909798d8ed5" name="gga62f2a7abb69b8c8eeae36f72e3a18bdaa90039e85e13ed1d6e1387909798d8ed5"></a>NM_LEARN_MODE&#160;</td><td class="fielddoc"><p>Learn mode state.</p>
 <p>GW is processing LEARN_SET, waiting for protocol.</p>
 <p>On callback (LearnModeStatus()) with LEARN_MODE_STARTED, go to <a class="el" href="#gga62f2a7abb69b8c8eeae36f72e3a18bdaa59cb0813f6109624ea22396b83eb4ab4">NM_LEARN_MODE_STARTED</a>, Lock RD probe machine, invalidate MyNodeID, and start S2 learn-mode state machine.</p>
-<p>Can be canceled or time out. This will trigger a partial re-initialization of the gateway (<a class="el" href="sl__zw__router_8c.html#a87b36c91c6162c7b0731d76127a1727a">sl_application_nif_init()</a>), unlock RD probe. ResetState() from nm_send_reply() with the LEARN_MODE_FAILED will bring NMS back to <a class="el" href="#gga62f2a7abb69b8c8eeae36f72e3a18bdaa6ba40fa12cade5baa49edfc331869a8b">NM_IDLE</a>. </p>
+<p>Can be canceled or time out. This will trigger a partial re-initialization of the gateway (sl_application_nif_init()), unlock RD probe. ResetState() from nm_send_reply() with the LEARN_MODE_FAILED will bring NMS back to <a class="el" href="#gga62f2a7abb69b8c8eeae36f72e3a18bdaa6ba40fa12cade5baa49edfc331869a8b">NM_IDLE</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga62f2a7abb69b8c8eeae36f72e3a18bdaa59cb0813f6109624ea22396b83eb4ab4" name="gga62f2a7abb69b8c8eeae36f72e3a18bdaa59cb0813f6109624ea22396b83eb4ab4"></a>NM_LEARN_MODE_STARTED&#160;</td><td class="fielddoc"><p>Learn mode state.</p>
 <p>The gateway is processing LEARN_SET and has received LEARN_MODE_STARTED from protocol. Now, the protocol is committed and the gateway waits for protocol completion.</p>

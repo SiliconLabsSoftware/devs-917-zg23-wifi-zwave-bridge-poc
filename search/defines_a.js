@@ -18,6 +18,5 @@ var searchData=
   ['kex_5fset_15',['KEX_SET',['../ZW__classcmd_8h.html#ad3178e63cd3cb9deee15c686b4e7a119',1,'ZW_classcmd.h']]],
   ['kex_5fset_5fproperties1_5fecho_5fbit_5fmask_16',['KEX_SET_PROPERTIES1_ECHO_BIT_MASK',['../ZW__classcmd_8h.html#a35a584d105275d4eda046ab7b32971ed',1,'ZW_classcmd.h']]],
   ['kex_5fset_5fproperties1_5freserved_5fmask_17',['KEX_SET_PROPERTIES1_RESERVED_MASK',['../ZW__classcmd_8h.html#ad334c64ef73ada22730a8446e850162e',1,'ZW_classcmd.h']]],
-  ['kex_5fset_5fproperties1_5freserved_5fshift_18',['KEX_SET_PROPERTIES1_RESERVED_SHIFT',['../ZW__classcmd_8h.html#abd337c042efcd4d9406513409edae9d5',1,'ZW_classcmd.h']]],
-  ['key_5fclass_5fs0_19',['KEY_CLASS_S0',['../sl__ts__s0_8h.html#ad83841a84a30c438de970ccf777f94b5',1,'sl_ts_s0.h']]]
+  ['kex_5fset_5fproperties1_5freserved_5fshift_18',['KEX_SET_PROPERTIES1_RESERVED_SHIFT',['../ZW__classcmd_8h.html#abd337c042efcd4d9406513409edae9d5',1,'ZW_classcmd.h']]]
 ];

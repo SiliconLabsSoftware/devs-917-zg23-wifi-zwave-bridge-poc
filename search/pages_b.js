@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['management_20interaction_0',['Network Management Interaction',['../group__ZIP__Resource.html#autotoc_md23',1,'']]],
-  ['mdns_20support_1',['mDNS Support',['../group__ZIP__Resource.html#autotoc_md22',1,'']]],
-  ['mode_20scenarios_2',['Tear down in Learn Mode Scenarios',['../C:/Users/atduy/Desktop/project/orbit/devs-917-zg23-wifi-zwave-bridge-poc/projects/apps/threads/sl_zw_router.c#autotoc_md51',1,'']]]
+  ['network_20management_20interaction_0',['Network Management Interaction',['../group__ZIP__Resource.html#autotoc_md46',1,'']]],
+  ['node_20detection_1',['Dead Node Detection',['../group__ZIP__Resource.html#autotoc_md44',1,'']]],
+  ['nodes_2',['IP Support for Z-Wave Nodes',['../group__ip__emulation.html#ip_support_for_zwave_nodes',1,'']]]
 ];

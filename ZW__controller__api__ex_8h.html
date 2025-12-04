@@ -92,7 +92,6 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a36fdf208987b19c0285dc9d4d4a8f865" id="r_a36fdf208987b19c0285dc9d4d4a8f865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36fdf208987b19c0285dc9d4d4a8f865">sl_appl_controller_update</a> (<a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> bStatus, uint16_t bNodeID, <a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *pCmd, <a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> bLen, <a class="el" href="ZW__typedefs_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *prospectID)</td></tr>
-<tr class="memdesc:a36fdf208987b19c0285dc9d4d4a8f865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles controller update events such as node inclusion/exclusion.  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="ae39b24f70c491cd30f1820728df65603" name="ae39b24f70c491cd30f1820728df65603"></a>
@@ -165,29 +164,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Handles controller update events such as node inclusion/exclusion. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bStatus</td><td>Status event code. </td></tr>
-    <tr><td class="paramname">bNodeID</td><td>Node ID of the node that sent node info. </td></tr>
-    <tr><td class="paramname">pCmd</td><td>Pointer to Application Node information. </td></tr>
-    <tr><td class="paramname">bLen</td><td>Node info length. </td></tr>
-    <tr><td class="paramname">prospectHomeID</td><td>NULL or the prospect homeid if smart start inclusion. </td></tr>
-  </table>
-  </dd>
-</dl>
-<p>We start a timer here to wait for the inclusion controller to probe the node, If we get an COMMAND_CLASS_INCLUSION_CONTROLLER INITIATE command, then we stop this timer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bStatus</td><td>Status event  </td></tr>
-    <tr><td class="paramname">bNodeID</td><td>Node id of the node that send node info  </td></tr>
-    <tr><td class="paramname">pCmd</td><td>Pointer to Application Node information  </td></tr>
-    <tr><td class="paramname">bLen</td><td>Node info length  </td></tr>
-    <tr><td class="paramname">prospectHomeID</td><td>NULL or the prospect homeid if smart start inclusion </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
