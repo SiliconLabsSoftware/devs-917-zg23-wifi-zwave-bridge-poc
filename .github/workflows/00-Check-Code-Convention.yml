@@ -40,6 +40,6 @@ jobs:
       - name: Check Code Convention
         uses: SiliconLabsSoftware/devs-coding-convention-tool@master
         with:
-          exclude-regex: '.*/mbedtls/.*|.*\.patch$|\.cproject$|\.project$|\.github/.*|.*/tools/.*|.*/resources/.*|\.gitignore$|CLA\.md$|Dockerfile$|projects/\.pre-commit-config\.yaml$|.*\.yml'
+          exclude-regex: '.*\/build\/.*|.*\/gecko_sdk.*/.*|.*\/autogen\/.*|.*simplicity.*/.*|.*\/config\/.*|.*\.slcp|.*\.slps|.*\.mak|.*/mbedtls/.*|.*\.patch$|\.cproject$|\.project$|\.github/.*|.*/tools/.*|.*/resources/.*|\.gitignore$|CLA\.md$|Dockerfile$|projects/\.pre-commit-config\.yaml$\|.*\.yml'
           codespell-ignore-words: ""
           codespell-skip-paths: ""
